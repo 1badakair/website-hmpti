@@ -8,7 +8,7 @@ import { ProgramSection } from "@/components/sections/home/ProgramSection"
 
 export default function Home() {
   return (
-    <div className="min-h-screen overflow-hidden bg-[#032d5c] text-white">
+    <div className="min-h-screen overflow-x-clip bg-[#032d5c] text-white">
       <Navbar />
       <main>
         <HeroSection />

@@ -9,7 +9,7 @@ export function ProgramSection() {
           <a
             href="#"
             key={program.title}
-            className="flex h-16 items-center justify-center gap-3 rounded-lg border border-white/35 bg-white/5 px-5 font-[var(--font-inter)] text-sm font-semibold text-white backdrop-blur transition hover:border-[#ffbd4a] hover:bg-[#ffbd4a]/10"
+            className="flex h-16 items-center justify-center gap-3 rounded-lg border border-white/35 bg-white/5 px-5 font-[family-name:var(--font-inter)] text-sm font-semibold text-white backdrop-blur transition hover:border-[#ffbd4a] hover:bg-[#ffbd4a]/10"
           >
             <Image src={program.icon} alt="" width={24} height={24} className="h-6 w-6" />
             {program.title}

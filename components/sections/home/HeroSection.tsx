@@ -18,25 +18,25 @@ export function HeroSection() {
 
       <div className="mx-auto grid max-w-[1216px] gap-10 pb-16 lg:grid-cols-[1fr_0.82fr] lg:items-center">
         <div className="max-w-2xl">
-          <h1 className="font-[var(--font-goldman)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.9] text-white drop-shadow-[0_5px_0_#002260]">
+          <h1 className="font-[family-name:var(--font-goldman)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.9] text-white drop-shadow-[0_5px_0_#002260]">
             <span className="block text-[#ffbd4a] [text-shadow:0_4px_0_#ffffff,0_9px_0_#002260]">
               One Vision
             </span>
             <span className="block [text-shadow:0_4px_0_#002260]">Infinite Solutions</span>
           </h1>
-          <p className="mt-8 max-w-xl font-[var(--font-work-sans)] text-sm leading-relaxed text-white/90 sm:text-base">
+          <p className="mt-8 max-w-xl font-[family-name:var(--font-inter)] text-sm leading-relaxed text-white/90 sm:text-base">
             HMPTI UKSW is the official Informatics Engineering student organization of UKSW,
             empowering students in technology and innovation.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a
-              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
               href="#explore"
             >
               Learn More
             </a>
             <a
-              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
               href="#explore"
             >
               Contact Us
@@ -59,7 +59,7 @@ export function HeroSection() {
         </div>
         <div className="mx-auto mt-8 flex max-w-4xl items-center gap-6">
           <div className="h-px flex-1 bg-[#ffbd4a]/35" />
-          <p className="text-center font-[var(--font-inter)] text-sm font-bold">
+          <p className="text-center font-[family-name:var(--font-inter)] text-sm font-bold">
             HMPTI UKSW
             <span className="block text-[10px] font-normal text-white/55">Periode 2025</span>
           </p>
