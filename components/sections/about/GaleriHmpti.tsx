@@ -13,7 +13,7 @@ export function GaleriHmpti() {
           width={255}
           height={255}
           aria-hidden
-          className="pointer-events-none absolute -left-16 top-1/2 hidden w-24 -translate-y-1/2 opacity-80 sm:block"
+          className="pointer-events-none absolute -left-16 top-1/2 block w-14 -translate-y-1/2 opacity-80 sm:w-24"
         />
         <h2 className="px-5 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
           Galeri <span className="text-[#ffbd4a]">HMPTI</span>
@@ -24,7 +24,7 @@ export function GaleriHmpti() {
           width={255}
           height={255}
           aria-hidden
-          className="pointer-events-none absolute -right-16 top-1/2 hidden w-24 -translate-y-1/2 opacity-80 sm:block"
+          className="pointer-events-none absolute -right-16 top-1/2 block w-14 -translate-y-1/2 opacity-80 sm:w-24"
         />
       </div>
 
@@ -42,14 +42,17 @@ export function GaleriHmpti() {
               {[...row, ...row].map((photo, i) => (
                 <div
                   key={`${photo.id}-${i}`}
-                  className="relative mr-4 h-44 w-[300px] shrink-0 overflow-hidden rounded-2xl sm:h-52 sm:w-[360px]"
+                  className="mr-4 h-44 w-[300px] shrink-0 overflow-hidden rounded-2xl sm:h-52 sm:w-[360px]"
                 >
-                  <Image
+                  {/* Plain img: marquee duplicates each photo, so we skip the
+                      next/image optimizer (no lazy gaps, no dev bottleneck). */}
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
                     src={photo.src}
                     alt={`Galeri HMPTI ${photo.id}`}
-                    fill
-                    sizes="360px"
-                    className="object-cover transition duration-300 hover:scale-105"
+                    loading="eager"
+                    decoding="async"
+                    className="h-full w-full object-cover transition duration-300 hover:scale-105"
                   />
                 </div>
               ))}

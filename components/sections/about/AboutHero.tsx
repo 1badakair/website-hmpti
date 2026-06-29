@@ -44,7 +44,7 @@ export function AboutHero() {
         width={255}
         height={255}
         aria-hidden
-        className="pointer-events-none absolute left-[4%] top-[26%] -z-10 hidden w-40 opacity-90 lg:block"
+        className="pointer-events-none absolute left-[4%] top-[26%] -z-10 block w-24 opacity-90 lg:w-40"
       />
       <Image
         src="/figma/star-rough.png"
@@ -52,7 +52,7 @@ export function AboutHero() {
         width={255}
         height={255}
         aria-hidden
-        className="pointer-events-none absolute right-[3%] top-[34%] -z-10 hidden w-28 opacity-90 lg:block"
+        className="pointer-events-none absolute right-[3%] top-[34%] -z-10 block w-16 opacity-90 lg:w-28"
       />
       <Image
         src="/figma/star-sparkle.svg"
@@ -60,7 +60,7 @@ export function AboutHero() {
         width={75}
         height={72}
         aria-hidden
-        className="pointer-events-none absolute left-[6%] top-[18%] hidden w-16 sm:block"
+        className="pointer-events-none absolute left-[6%] top-[18%] block w-10 sm:w-16"
       />
       <Image
         src="/figma/star-outline.svg"
@@ -68,7 +68,7 @@ export function AboutHero() {
         width={86}
         height={86}
         aria-hidden
-        className="pointer-events-none absolute right-[6%] top-[16%] hidden w-20 sm:block"
+        className="pointer-events-none absolute right-[6%] top-[16%] block w-12 sm:w-20"
       />
       <Image
         src="/figma/star-solid.svg"
@@ -76,7 +76,7 @@ export function AboutHero() {
         width={88}
         height={91}
         aria-hidden
-        className="pointer-events-none absolute right-[16%] top-[24%] hidden w-12 lg:block"
+        className="pointer-events-none absolute right-[16%] top-[24%] block w-8 lg:w-12"
       />
       <Image
         src="/figma/star-blob-white.svg"
@@ -84,7 +84,7 @@ export function AboutHero() {
         width={41}
         height={41}
         aria-hidden
-        className="pointer-events-none absolute bottom-[24%] left-[3%] hidden w-10 sm:block"
+        className="pointer-events-none absolute bottom-[24%] left-[3%] block w-8 sm:w-10"
       />
 
       <div className="mx-auto flex max-w-[1000px] flex-col items-center py-16 text-center sm:py-24">

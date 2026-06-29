@@ -16,7 +16,7 @@ export function Maskot() {
         width={255}
         height={255}
         aria-hidden
-        className="pointer-events-none absolute left-[2%] top-[10%] -z-10 hidden w-44 opacity-80 lg:block"
+        className="pointer-events-none absolute left-[2%] top-[10%] -z-10 block w-24 opacity-80 lg:w-44"
       />
       <Image
         src="/figma/star-rough.png"
@@ -24,7 +24,7 @@ export function Maskot() {
         width={255}
         height={255}
         aria-hidden
-        className="pointer-events-none absolute right-[6%] bottom-[6%] -z-10 hidden w-56 opacity-60 lg:block"
+        className="pointer-events-none absolute right-[6%] bottom-[6%] -z-10 block w-28 opacity-60 lg:w-56"
       />
 
       <div className="mx-auto grid max-w-[1120px] items-center gap-12 lg:grid-cols-[1fr_minmax(0,520px)] lg:items-end">
