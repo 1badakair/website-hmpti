@@ -59,7 +59,7 @@ export function TentangKami() {
         width={255}
         height={255}
         aria-hidden
-        className="pointer-events-none absolute right-[8%] top-[28%] -z-10 hidden w-28 opacity-80 lg:block"
+        className="pointer-events-none absolute right-[8%] top-[28%] -z-10 block w-16 opacity-80 lg:w-28"
       />
 
       <div className="mx-auto max-w-[900px] text-center">

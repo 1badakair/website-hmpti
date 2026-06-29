@@ -21,7 +21,7 @@ export function VisiMisi() {
         width={475}
         height={486}
         aria-hidden
-        className="pointer-events-none absolute left-[-160px] top-[20%] z-0 hidden w-[520px] lg:block"
+        className="pointer-events-none absolute left-[-160px] top-[20%] z-0 block w-[230px] lg:w-[520px]"
       />
       <Image
         src="/figma/Star3.svg"
@@ -29,7 +29,7 @@ export function VisiMisi() {
         width={475}
         height={486}
         aria-hidden
-        className="pointer-events-none absolute right-[-80px] top-[6%] z-0 hidden w-[340px] lg:block"
+        className="pointer-events-none absolute right-[-80px] top-[6%] z-0 block w-[150px] lg:w-[340px]"
       />
 
       <div className="relative z-10 mx-auto max-w-[1022px]">
@@ -62,7 +62,7 @@ export function VisiMisi() {
               width={109}
               height={109}
               aria-hidden
-              className="pointer-events-none absolute -left-10 -top-10 z-10 hidden w-[88px] sm:block"
+              className="pointer-events-none absolute -left-10 -top-10 z-10 block w-14 sm:w-[88px]"
             />
             <Image
               src="/figma/star-blob.svg"
@@ -70,7 +70,7 @@ export function VisiMisi() {
               width={74}
               height={74}
               aria-hidden
-              className="pointer-events-none absolute -bottom-6 right-2 z-10 hidden w-14 sm:block"
+              className="pointer-events-none absolute -bottom-6 right-2 z-10 block w-10 sm:w-14"
             />
             <div className="flex min-h-[280px] items-center rounded-[25px] bg-[#001b4b] p-8 font-[family-name:var(--font-inter)] text-white lg:h-[419px] lg:p-10">
               {active === "Visi" ? (
