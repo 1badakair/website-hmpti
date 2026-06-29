@@ -33,3 +33,24 @@ export const academicPosts = [
     readTime: "5 menit",
   },
 ]
+
+export const academicPagePosts = [
+  {
+    id: "info-lomba",
+    title: "Info Lomba",
+    category: "lomba",
+    description: "Kumpulan informasi lomba untuk mahasiswa Informatika.",
+  },
+  {
+    id: "jadwal-seminar",
+    title: "Jadwal Seminar",
+    category: "seminar",
+    description: "Informasi seminar dan kegiatan akademik yang relevan.",
+  },
+  {
+    id: "info-beasiswa",
+    title: "Info Beasiswa",
+    category: "beasiswa",
+    description: "Informasi peluang beasiswa untuk mahasiswa.",
+  },
+] satisfies import("@/types").AcademicPost[]
