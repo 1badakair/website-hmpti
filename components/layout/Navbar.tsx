@@ -3,18 +3,25 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Profile", href: "#" },
-  { label: "Program", href: "#" },
-  { label: "Academic", href: "#" },
+  { label: "Profile", href: "/profile" },
+  { label: "Program", href: "/program" },
+  { label: "Academic", href: "/academic" },
 ]
 
 export function Navbar() {
+  const pathname = usePathname()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/"
+    return pathname === href || pathname.startsWith(`${href}/`)
+  }
 
   useEffect(() => {
     const onScroll = () => {
@@ -61,7 +68,10 @@ export function Navbar() {
         <div className="hidden items-center gap-10 font-[family-name:var(--font-inter)] text-sm md:flex">
           {navItems.map((item) => (
             <Link
-              className="text-white transition hover:text-[#ffbd4a]"
+              aria-current={isActive(item.href) ? "page" : undefined}
+              className={`transition hover:text-[#ffbd4a] ${
+                isActive(item.href) ? "font-semibold text-[#ffbd4a]" : "text-white"
+              }`}
               href={item.href}
               key={item.label}
             >
@@ -101,7 +111,10 @@ export function Navbar() {
           <nav className="flex flex-col p-2 font-[family-name:var(--font-inter)] text-sm">
             {navItems.map((item) => (
               <Link
-                className="rounded-xl px-4 py-3 text-white transition hover:bg-white/10 hover:text-[#ffbd4a]"
+                aria-current={isActive(item.href) ? "page" : undefined}
+                className={`rounded-xl px-4 py-3 transition hover:bg-white/10 hover:text-[#ffbd4a] ${
+                  isActive(item.href) ? "bg-white/10 font-semibold text-[#ffbd4a]" : "text-white"
+                }`}
                 href={item.href}
                 key={item.label}
                 onClick={() => setOpen(false)}
