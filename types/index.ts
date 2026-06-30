@@ -1,8 +1,26 @@
 export type Program = {
   id: string
+  slug: string
+  title: string
+  category: ProgramCategory
+  description: string
+  content: string
+  image: string
+  date: string
+  mode: string
+  location: string
+  audience: string
+  benefits: string[]
+  materials: string[]
+}
+
+export type ProgramCategory = "Internal" | "Ekstra Akademik" | "Akademik"
+
+export type ProgramSummary = {
+  id: string
+  icon: string
   title: string
   description: string
-  imageUrl?: string
 }
 
 export type AcademicPost = {
