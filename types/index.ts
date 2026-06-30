@@ -19,6 +19,20 @@ export type Department = {
   description: string
 }
 
+export type ProfileMember = {
+  id: string
+  name: string
+  role: string
+  image: string
+}
+
+export type ProfileDepartment = {
+  id: "bph" | "operation" | "creative" | "academic" | "humanitarian"
+  name: string
+  description: string
+  members: ProfileMember[]
+}
+
 export type GalleryItem = {
   id: string
   title: string
