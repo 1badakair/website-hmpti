@@ -26,10 +26,22 @@ export type ProgramSummary = {
 export type AcademicPost = {
   id: string
   title: string
-  category: "lomba" | "seminar" | "beasiswa"
+  category: AcademicCategory
   description: string
+  image?: string
   imageUrl?: string
+  date?: string
+  href?: string
+  badge?: string
+  organizer?: string
+  tags?: string[]
+  registration?: string
+  eventDate?: string
+  cost?: string
+  buttonLabel?: string
 }
+
+export type AcademicCategory = "lomba" | "seminar" | "beasiswa" | "magang"
 
 export type Department = {
   id: string
