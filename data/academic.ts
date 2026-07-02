@@ -37,20 +37,90 @@ export const academicPosts = [
 export const academicPagePosts = [
   {
     id: "info-lomba",
-    title: "Info Lomba",
+    title: "Lomba",
     category: "lomba",
-    description: "Kumpulan informasi lomba untuk mahasiswa Informatika.",
+    description:
+      "Kumpulan informasi kompetisi teknologi, desain, dan inovasi untuk mahasiswa Informatika.",
+    image: "/figma/academic-lomba.png",
+    badge: "Achievement",
+    href: "#recent-activities",
   },
   {
     id: "jadwal-seminar",
-    title: "Jadwal Seminar",
+    title: "Seminar",
     category: "seminar",
-    description: "Informasi seminar dan kegiatan akademik yang relevan.",
+    description:
+      "Agenda seminar, kuliah umum, dan diskusi industri yang relevan untuk pengembangan skill.",
+    image: "/figma/academic-seminar.png",
+    badge: "Achievement",
+    href: "#recent-activities",
   },
   {
     id: "info-beasiswa",
-    title: "Info Beasiswa",
+    title: "Beasiswa",
     category: "beasiswa",
-    description: "Informasi peluang beasiswa untuk mahasiswa.",
+    description:
+      "Peluang pendanaan studi, bantuan pendidikan, dan program apresiasi prestasi mahasiswa.",
+    image: "/figma/academic-beasiswa.png",
+    badge: "Achievement",
+    href: "#recent-activities",
+  },
+  {
+    id: "magang-bersertifikat",
+    title: "Magang & Sertifikasi",
+    category: "magang",
+    description:
+      "Kurasi peluang magang bersertifikat dan program karier untuk calon profesional IT.",
+    image: "/figma/academic-magang.png",
+    badge: "Achievement",
+    href: "#recent-activities",
+  },
+] satisfies import("@/types").AcademicPost[]
+
+export const academicCategories = [
+  { id: "lomba", label: "Lomba" },
+  { id: "seminar", label: "Seminar" },
+  { id: "beasiswa", label: "Beasiswa" },
+  { id: "magang", label: "Magang" },
+] satisfies Array<{ id: import("@/types").AcademicCategory; label: string }>
+
+export const academicStats = [
+  { id: "scholarships", value: "3", label: "Scholarships" },
+  { id: "competitions", value: "0", label: "Competitions" },
+  { id: "seminars", value: "4", label: "Seminars" },
+]
+
+export const recentAcademicActivities = [
+  {
+    id: "techcomfest-ctf-2026",
+    title: "TECHCOMFEST 2026 - CTF",
+    category: "lomba",
+    description:
+      "Kompetisi Capture The Flag tingkat nasional untuk mengasah kemampuan cyber security.",
+    image: "/figma/academic-recent.png",
+    date: "Pendaftaran Dibuka",
+    organizer: "UKM Polytechnic Computer Club Polines",
+    tags: ["Nasional", "Cyber Security"],
+    registration: "15 Oktober - 13 Desember",
+    eventDate: "27 Desember",
+    cost: "Rp90.000",
+    buttonLabel: "Info Lomba",
+    href: "#",
+  },
+  {
+    id: "techcomfest-ctf-2026-2",
+    title: "TECHCOMFEST 2026 - CTF",
+    category: "lomba",
+    description:
+      "Kompetisi Capture The Flag tingkat nasional untuk mengasah kemampuan cyber security.",
+    image: "/figma/academic-recent.png",
+    date: "Pendaftaran Dibuka",
+    organizer: "UKM Polytechnic Computer Club Polines",
+    tags: ["Nasional", "Cyber Security"],
+    registration: "15 Oktober - 13 Desember",
+    eventDate: "27 Desember",
+    cost: "Rp90.000",
+    buttonLabel: "Info Lomba",
+    href: "#",
   },
 ] satisfies import("@/types").AcademicPost[]

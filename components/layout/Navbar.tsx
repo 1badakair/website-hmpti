@@ -11,6 +11,7 @@ const navItems = [
   { label: "Profile", href: "/profile" },
   { label: "Program", href: "/program" },
   { label: "Academic", href: "/academic" },
+  { label: "Aspiration", href: "/aspiration" },
 ]
 
 export function Navbar() {
@@ -65,7 +66,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop nav — sits at the far right */}
-        <div className="hidden items-center gap-10 font-[family-name:var(--font-inter)] text-sm md:flex">
+        <div className="hidden items-center gap-6 font-[family-name:var(--font-inter)] text-sm lg:gap-9 md:flex">
           {navItems.map((item) => (
             <Link
               aria-current={isActive(item.href) ? "page" : undefined}

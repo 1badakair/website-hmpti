@@ -1,22 +1,83 @@
+"use client"
+
+import { useMemo, useState } from "react"
+import Image from "next/image"
 import { academicPagePosts } from "@/data/academic"
+import type { AcademicCategory } from "@/types"
 import { AcademicCard } from "./AcademicCard"
 import { AcademicFilter } from "./AcademicFilter"
 
 export function AcademicInfoSection() {
+  const [query, setQuery] = useState("")
+  const [activeCategory, setActiveCategory] = useState<AcademicCategory | null>(null)
+
+  const filteredPosts = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase()
+
+    return academicPagePosts.filter((post) => {
+      const matchesCategory = !activeCategory || post.category === activeCategory
+      const searchable = `${post.title} ${post.category} ${post.description}`.toLowerCase()
+      const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
+
+      return matchesCategory && matchesQuery
+    })
+  }, [activeCategory, query])
+
   return (
-    <section className="px-6 py-12">
-      <div className="mx-auto max-w-6xl">
-        <AcademicFilter />
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
-          {academicPagePosts.map((post) => (
+    <section className="relative -mt-[39px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-12 pt-[118px] sm:px-8 lg:px-16">
+      <Image
+        src="/figma/star-rough.png"
+        alt=""
+        width={140}
+        height={140}
+        className="absolute left-[11%] top-[98px] hidden h-[100px] w-[100px] object-contain opacity-60 md:block"
+      />
+      <Image
+        src="/figma/star-blob-white.svg"
+        alt=""
+        width={118}
+        height={118}
+        className="absolute right-[11%] top-[285px] hidden h-[96px] w-[96px] object-contain md:block"
+      />
+
+      <div className="mx-auto max-w-[1217px]">
+        <div className="mx-auto max-w-[916px] text-center">
+          <h2 className="font-[family-name:var(--font-goldman)] text-[clamp(3rem,6vw,4rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
+            HMPTI <span className="text-[#ffbd4a]">Info</span>
+          </h2>
+          <p className="mx-auto mt-[52px] max-w-[724px] font-[family-name:var(--font-inter)] text-base font-bold leading-[1.45] text-white sm:text-[22px]">
+            Cari info seminar, beasiswa dan program menarik dan terbaru
+            lainnya.
+          </p>
+        </div>
+
+        <div className="mt-[76px]">
+          <AcademicFilter
+            query={query}
+            onQueryChange={setQuery}
+          />
+        </div>
+
+        <div className="mt-9 grid gap-[27px] md:grid-cols-2 xl:grid-cols-4">
+          {filteredPosts.map((post) => (
             <AcademicCard
-              category={post.category}
-              description={post.description}
+              active={activeCategory === post.category}
               key={post.id}
-              title={post.title}
+              post={post}
+              onSelect={() =>
+                setActiveCategory((current) =>
+                  current === post.category ? null : post.category,
+                )
+              }
             />
           ))}
         </div>
+
+        {filteredPosts.length === 0 && (
+          <div className="mt-9 rounded-[16px] border-2 border-white/20 bg-white/[0.06] px-6 py-12 text-center font-[family-name:var(--font-inter)] text-white/70">
+            Info akademik belum ditemukan. Coba kata kunci atau kategori lain.
+          </div>
+        )}
       </div>
     </section>
   )
