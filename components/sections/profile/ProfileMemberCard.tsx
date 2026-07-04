@@ -2,7 +2,9 @@ import Image from "next/image"
 import type { ProfileMember } from "@/types"
 
 type ProfileMemberCardProps = {
-  member: ProfileMember
+  member: ProfileMember & {
+    profileUrl?: string
+  }
 }
 
 export function ProfileMemberCard({ member }: ProfileMemberCardProps) {
@@ -23,13 +25,21 @@ export function ProfileMemberCard({ member }: ProfileMemberCardProps) {
       <p className="mt-1 max-w-[140px] font-[family-name:var(--font-inter)] text-xs font-semibold text-[#ff9524]">
         {member.role}
       </p>
-      <button
-        className="absolute bottom-3 right-3 inline-flex h-[22px] items-center gap-1 rounded-[8px] border border-white bg-[#002a75] px-2 font-[family-name:var(--font-inter)] text-[8px] font-medium text-white"
-        type="button"
-      >
-        Lihat Profil
-        <span aria-hidden="true">›</span>
-      </button>
+      {member.profileUrl ? (
+        <a
+          className="absolute bottom-3 right-3 inline-flex h-[22px] items-center gap-1 rounded-[8px] border border-white bg-[#002a75] px-2 font-[family-name:var(--font-inter)] text-[8px] font-medium text-white"
+          href={member.profileUrl}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Lihat Profil
+          <span aria-hidden="true">›</span>
+        </a>
+      ) : (
+        <span className="absolute bottom-3 right-3 inline-flex h-[22px] items-center rounded-[8px] border border-white/60 bg-[#002a75]/45 px-2 font-[family-name:var(--font-inter)] text-[8px] font-medium text-white/70">
+          Belum Tersedia
+        </span>
+      )}
     </article>
   )
 }
