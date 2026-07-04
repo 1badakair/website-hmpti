@@ -43,7 +43,7 @@ export const academicPagePosts = [
       "Kumpulan informasi kompetisi teknologi, desain, dan inovasi untuk mahasiswa Informatika.",
     image: "/figma/academic-lomba.png",
     badge: "Achievement",
-    href: "#recent-activities",
+    href: "/academic/lomba",
   },
   {
     id: "jadwal-seminar",
@@ -53,7 +53,7 @@ export const academicPagePosts = [
       "Agenda seminar, kuliah umum, dan diskusi industri yang relevan untuk pengembangan skill.",
     image: "/figma/academic-seminar.png",
     badge: "Achievement",
-    href: "#recent-activities",
+    href: "/academic/seminar",
   },
   {
     id: "info-beasiswa",
@@ -63,7 +63,7 @@ export const academicPagePosts = [
       "Peluang pendanaan studi, bantuan pendidikan, dan program apresiasi prestasi mahasiswa.",
     image: "/figma/academic-beasiswa.png",
     badge: "Achievement",
-    href: "#recent-activities",
+    href: "/academic/beasiswa",
   },
   {
     id: "magang-bersertifikat",
@@ -73,7 +73,7 @@ export const academicPagePosts = [
       "Kurasi peluang magang bersertifikat dan program karier untuk calon profesional IT.",
     image: "/figma/academic-magang.png",
     badge: "Achievement",
-    href: "#recent-activities",
+    href: "/academic/magang-sertifikasi",
   },
 ] satisfies import("@/types").AcademicPost[]
 
