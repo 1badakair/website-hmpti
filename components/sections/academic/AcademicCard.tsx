@@ -1,5 +1,6 @@
 import type { AcademicPost } from "@/types"
 import Image from "next/image"
+import Link from "next/link"
 
 type AcademicCardProps = {
   post: AcademicPost
@@ -8,14 +9,12 @@ type AcademicCardProps = {
 }
 
 export function AcademicCard({ active = false, onSelect, post }: AcademicCardProps) {
-  return (
-    <button
-      type="button"
-      onClick={onSelect}
-      className={`group relative h-[298px] w-full overflow-hidden rounded-[16px] border-2 text-left shadow-[0_18px_42px_rgba(0,0,0,0.26)] transition duration-300 hover:-translate-y-1 ${
-        active ? "border-[#f9a825]" : "border-white/30 hover:border-[#ffbd4a]"
-      }`}
-    >
+  const cardClassName = `group relative block h-[298px] w-full overflow-hidden rounded-[16px] border-2 text-left shadow-[0_18px_42px_rgba(0,0,0,0.26)] transition duration-300 hover:-translate-y-1 ${
+    active ? "border-[#f9a825]" : "border-white/30 hover:border-[#ffbd4a]"
+  }`
+
+  const content = (
+    <>
       <Image
         src={post.image ?? "/figma/academic-lomba.png"}
         alt={post.title}
@@ -33,6 +32,24 @@ export function AcademicCard({ active = false, onSelect, post }: AcademicCardPro
       <span className="absolute bottom-8 left-8 font-[family-name:var(--font-inter)] text-sm font-medium text-white/75">
         Explore Portal
       </span>
+    </>
+  )
+
+  if (post.href) {
+    return (
+      <Link className={cardClassName} href={post.href}>
+        {content}
+      </Link>
+    )
+  }
+
+  return (
+    <button
+      type="button"
+      onClick={onSelect}
+      className={cardClassName}
+    >
+      {content}
     </button>
   )
 }
