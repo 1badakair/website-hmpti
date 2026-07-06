@@ -47,7 +47,7 @@ export function Maskot() {
             <span className="text-[#ffbd4a]">Owiie</span>
           </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
+          <div className="mt-7 grid grid-cols-3 gap-3">
             {maskotTabs.map((tab) => {
               const isActive = active === tab.id
               return (
@@ -56,7 +56,7 @@ export function Maskot() {
                   type="button"
                   onClick={() => setActive(tab.id)}
                   aria-pressed={isActive}
-                  className={`rounded-[15px] border border-white px-8 py-2.5 font-[family-name:var(--font-inter)] text-lg font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition sm:text-xl ${
+                  className={`rounded-[15px] border border-white px-3 py-2.5 font-[family-name:var(--font-inter)] text-base font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition sm:px-8 sm:text-xl ${
                     isActive ? "bg-[#a0aec0]" : "bg-[#002a75] hover:bg-[#003491]"
                   }`}
                 >
@@ -91,7 +91,7 @@ export function Maskot() {
         <div className="overflow-hidden rounded-[15px] bg-white shadow-[0_20px_55px_rgba(0,0,0,0.35)]">
           <div className="relative aspect-[495/278] w-full">
             <Image
-              src="/figma/owiie.png"
+              src="/figma/owiie.svg"
               alt="Owiie — maskot HMPTI"
               fill
               sizes="(min-width: 1024px) 520px, 92vw"
