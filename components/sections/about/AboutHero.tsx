@@ -28,13 +28,13 @@ function StackedLine({ text, fill }: { text: string; fill: string }) {
 export function AboutHero() {
   return (
     <section className="relative isolate -mt-[101px] overflow-hidden px-5 pb-24 pt-[197px] sm:px-8 lg:px-16">
-      <Image
-        src="/figma/hero-members.png"
-        alt="Anggota HMPTI UKSW"
-        fill
-        priority
-        sizes="100vw"
-        className="-z-20 object-cover"
+      <video
+        src="/assets/video/home-hmpti.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 -z-20 h-full w-full object-cover"
       />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(3,45,92,0.85)_0%,rgba(3,45,92,0.78)_40%,rgba(3,45,92,0.96)_82%,#032d5c_100%)]" />
 

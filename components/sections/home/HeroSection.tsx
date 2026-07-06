@@ -1,10 +1,24 @@
-import Image from "next/image"
-import { galleryItems } from "@/data/gallery"
+"use client"
 
+import { useRef, useState } from "react"
+import Image from "next/image"
 import { MotionSection } from "@/components/ui/MotionSection"
+import { Play, Pause } from "lucide-react"
 
 export function HeroSection() {
-  const heroImage = galleryItems[0]
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [isPlaying, setIsPlaying] = useState(true)
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause()
+      } else {
+        videoRef.current.play()
+      }
+      setIsPlaying(!isPlaying)
+    }
+  }
 
   return (
     <section className="relative isolate min-h-[729px] px-5 pb-16 pt-20 sm:px-8 lg:px-16 lg:pt-24">
@@ -49,14 +63,34 @@ export function HeroSection() {
 
       <div className="mx-auto max-w-[1110px]">
         <div className="relative overflow-hidden rounded-[18px] border border-[#ffbd4a]/45 bg-[#001a48] p-2 shadow-[0_16px_50px_rgba(0,0,0,0.28)]">
-          <div className="relative aspect-[1070/510] overflow-hidden rounded-xl">
-            <Image
-              src={heroImage.imageUrl}
-              alt={heroImage.title}
-              fill
-              className="object-cover"
-              sizes="(min-width: 1200px) 1110px, 92vw"
+          <div
+            className="group relative aspect-[1070/510] cursor-pointer overflow-hidden rounded-xl bg-black"
+            onClick={togglePlay}
+          >
+            <video
+              ref={videoRef}
+              src="/assets/video/home-hmpti.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover"
             />
+            <div
+              className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
+                !isPlaying
+                  ? "bg-black/40 opacity-100"
+                  : "bg-black/20 opacity-0 group-hover:opacity-100"
+              }`}
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#ffbd4a] text-[#001a48] shadow-[0_8px_24px_rgba(255,189,74,0.4)] transition-transform hover:scale-105 active:scale-95 sm:h-24 sm:w-24">
+                {!isPlaying ? (
+                  <Play className="ml-1.5 h-8 w-8 sm:ml-2 sm:h-12 sm:w-12" fill="currentColor" />
+                ) : (
+                  <Pause className="h-8 w-8 sm:h-12 sm:w-12" fill="currentColor" />
+                )}
+              </div>
+            </div>
           </div>
         </div>
         <div className="mx-auto mt-8 flex max-w-4xl items-center gap-6">

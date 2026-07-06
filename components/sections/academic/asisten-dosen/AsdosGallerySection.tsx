@@ -1,4 +1,8 @@
+"use client"
+
+import { useRef, useState } from "react"
 import Image from "next/image"
+import { Play, Pause } from "lucide-react"
 
 const galleryItems = [
   {
@@ -30,6 +34,19 @@ const galleryItems = [
 
 export function AsdosGallerySection() {
   const [mainImage, ...thumbnails] = galleryItems
+  const videoRef = useRef<HTMLVideoElement>(null)
+  const [isPlaying, setIsPlaying] = useState(true)
+
+  const togglePlay = () => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.pause()
+      } else {
+        videoRef.current.play()
+      }
+      setIsPlaying(!isPlaying)
+    }
+  }
 
   return (
     <section className="relative bg-[#001b4b] px-5 pb-24 pt-2 sm:px-8 sm:pb-[130px] lg:px-16">
@@ -54,14 +71,34 @@ export function AsdosGallerySection() {
           </h2>
         </div>
 
-        <div className="relative mt-9 aspect-video overflow-hidden rounded-[13px] border border-white/20 bg-[#002a75] shadow-[0_20px_56px_rgba(0,0,0,0.28)] sm:mt-12 sm:aspect-[16/8.6]">
-          <Image
-            src={mainImage.image}
-            alt={mainImage.title}
-            fill
-            sizes="(min-width: 1024px) 860px, 100vw"
-            className="object-cover"
+        <div
+          className="group relative mt-9 aspect-video cursor-pointer overflow-hidden rounded-[13px] border border-white/20 bg-black shadow-[0_20px_56px_rgba(0,0,0,0.28)] sm:mt-12 sm:aspect-[16/8.6]"
+          onClick={togglePlay}
+        >
+          <video
+            ref={videoRef}
+            src="/assets/video/home-hmpti.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="h-full w-full object-cover"
           />
+          <div
+            className={`absolute inset-0 flex items-center justify-center transition-all duration-300 ${
+              !isPlaying
+                ? "bg-black/40 opacity-100"
+                : "bg-black/20 opacity-0 group-hover:opacity-100"
+            }`}
+          >
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#ffbd4a] text-[#001a48] shadow-[0_8px_24px_rgba(255,189,74,0.4)] transition-transform hover:scale-105 active:scale-95 sm:h-24 sm:w-24">
+              {!isPlaying ? (
+                <Play className="ml-1.5 h-8 w-8 sm:ml-2 sm:h-12 sm:w-12" fill="currentColor" />
+              ) : (
+                <Pause className="h-8 w-8 sm:h-12 sm:w-12" fill="currentColor" />
+              )}
+            </div>
+          </div>
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-9 sm:gap-5 lg:grid-cols-4">
