@@ -31,7 +31,7 @@ export function AsdosFormSection() {
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setSuccessMessage(
-      "Terima kasih. Aspirasi asisten dosen sudah tersimpan sementara.",
+      "Thank you. Teaching assistant aspiration has been temporarily saved.",
     )
     setForm(initialForm)
   }
@@ -40,50 +40,50 @@ export function AsdosFormSection() {
     <section className="relative -mt-[35px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-24 pt-24 sm:px-8 sm:pb-[120px] sm:pt-[132px] lg:px-16">
       <div className="mx-auto max-w-[886px]">
         <h2 className="text-center font-[family-name:var(--font-goldman)] text-[clamp(2.7rem,6vw,4rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,27,75,0.45)]">
-          Form <span className="text-[#ffbd4a]">Aspirasi</span>
+          Aspiration <span className="text-[#ffbd4a]">Form</span>
         </h2>
 
         <div className="mt-10 rounded-[13px] border border-white/80 bg-white/[0.12] px-5 py-8 shadow-[0_20px_70px_rgba(0,0,0,0.28)] backdrop-blur sm:mt-14 sm:px-9 sm:py-12 lg:px-[91px] lg:py-[96px]">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="grid gap-6 md:grid-cols-2">
               <label className="block font-[family-name:var(--font-inter)] text-sm font-bold text-white">
-                Nama (Opsional)
+                Name (Optional)
                 <input
                   value={form.name}
                   onChange={updateField("name")}
-                  placeholder="Nama lengkap"
+                  placeholder="Full Name"
                   className="mt-2 h-[47px] w-full rounded-[10px] border border-[#d5d5d5] bg-white px-5 font-[family-name:var(--font-inter)] text-sm font-medium text-[#001b4b] outline-none transition placeholder:text-[#7890bb] focus:border-[#ffbd4a] focus:ring-2 focus:ring-[#ffbd4a]/35"
                 />
               </label>
 
               <label className="block font-[family-name:var(--font-inter)] text-sm font-bold text-white">
-                NIM (Opsional)
+                NIM (Optional)
                 <input
                   value={form.nim}
                   onChange={updateField("nim")}
-                  placeholder="Nomor Induk Mahasiswa"
+                  placeholder="Student Identification Number"
                   className="mt-2 h-[47px] w-full rounded-[10px] border border-[#d5d5d5] bg-white px-5 font-[family-name:var(--font-inter)] text-sm font-medium text-[#001b4b] outline-none transition placeholder:text-[#7890bb] focus:border-[#ffbd4a] focus:ring-2 focus:ring-[#ffbd4a]/35"
                 />
               </label>
             </div>
 
             <label className="block font-[family-name:var(--font-inter)] text-sm font-bold text-white">
-              Kontak (Opsional)
+              Contact (Optional)
               <input
                 value={form.contact}
                 onChange={updateField("contact")}
-                placeholder="Email atau nomor WhatsApp"
+                placeholder="Email or WhatsApp number"
                 className="mt-2 h-[47px] w-full rounded-[10px] border border-[#d5d5d5] bg-white px-5 font-[family-name:var(--font-inter)] text-sm font-medium text-[#001b4b] outline-none transition placeholder:text-[#7890bb] focus:border-[#ffbd4a] focus:ring-2 focus:ring-[#ffbd4a]/35"
               />
             </label>
 
             <label className="block font-[family-name:var(--font-inter)] text-sm font-bold text-white">
-              Isi Aspirasi *
+              Aspiration Details *
               <textarea
                 required
                 value={form.aspiration}
                 onChange={updateField("aspiration")}
-                placeholder="Tuliskan aspirasi, saran, atau masukan Anda di sini..."
+                placeholder="Write down your aspirations, suggestions, or feedback here..."
                 className="mt-2 min-h-[146px] w-full resize-y rounded-[10px] border border-[#d5d5d5] bg-white px-5 py-4 font-[family-name:var(--font-inter)] text-sm font-medium text-[#001b4b] outline-none transition placeholder:text-[#7890bb] focus:border-[#ffbd4a] focus:ring-2 focus:ring-[#ffbd4a]/35"
               />
             </label>
@@ -95,8 +95,8 @@ export function AsdosFormSection() {
               >
                 i
               </span>
-              Aspirasi Anda dijamin kerahasiaannya. Tetap santun dalam
-              menyampaikan pendapat.
+              Your aspiration is guaranteed confidential. Please remain polite in
+              expressing your opinions.
             </p>
 
             {successMessage && (
@@ -126,7 +126,7 @@ export function AsdosFormSection() {
                   strokeWidth="2"
                 />
               </svg>
-              Kirim Aspirasi
+              Submit Aspiration
             </button>
           </form>
         </div>

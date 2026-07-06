@@ -4,15 +4,15 @@ import { useState } from "react"
 import Image from "next/image"
 import { misiContent, visiContent } from "@/data/about"
 
-type Tab = "Visi" | "Misi"
+type Tab = "Vision" | "Mission"
 
 export function VisiMisi() {
-  const [active, setActive] = useState<Tab>("Visi")
+  const [active, setActive] = useState<Tab>("Vision")
 
   return (
     <section id="visi-misi" className="relative scroll-mt-32 px-5 py-20 sm:px-8 lg:px-16">
       <h2 className="mb-12 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
-        Visi <span className="text-[#ffbd4a]">Misi</span>
+        Vision <span className="text-[#ffbd4a]">Mission</span>
       </h2>
 
       <Image
@@ -35,7 +35,7 @@ export function VisiMisi() {
       <div className="relative z-10 mx-auto max-w-[1022px]">
         <div className="flex flex-col items-center justify-center gap-8 rounded-[25px] border-2 border-white/80 bg-[linear-gradient(145deg,rgba(255,255,255,0.4)_4%,rgba(133,190,255,0.24)_22%,rgba(6,94,194,0.4)_53%,rgba(3,45,92,0.4)_98%)] p-8 shadow-[8px_12px_80px_0_rgba(0,0,0,0.25)] lg:h-[552px] lg:flex-row lg:gap-[70px] lg:px-[68px]">
           <div className="flex w-full max-w-[222px] flex-col gap-[30px]">
-            {(["Visi", "Misi"] as Tab[]).map((tab) => {
+            {(["Vision", "Mission"] as Tab[]).map((tab) => {
               const isActive = active === tab
               return (
                 <button
@@ -73,7 +73,7 @@ export function VisiMisi() {
               className="pointer-events-none absolute -bottom-6 right-2 z-10 block w-10 sm:w-14"
             />
             <div className="flex min-h-[280px] items-center rounded-[25px] bg-[#001b4b] p-8 font-[family-name:var(--font-inter)] text-white lg:h-[419px] lg:p-10">
-              {active === "Visi" ? (
+              {active === "Vision" ? (
                 <p className="w-full text-center text-lg font-medium leading-[26px]">
                   {visiContent}
                 </p>

@@ -89,11 +89,11 @@ export function AboutHero() {
 
       <div className="mx-auto flex max-w-[1000px] flex-col items-center py-16 text-center sm:py-24">
         <h1 className="font-[family-name:var(--font-goldman)] text-[clamp(2rem,6.5vw,4.5rem)] font-bold uppercase leading-[1.05]">
-          <StackedLine text="Himpunan Mahasiswa" fill="#fef9db" />
-          <StackedLine text="Prodi Teknik Informatika" fill="#ffbd4a" />
+          <StackedLine text="Informatics Engineering" fill="#fef9db" />
+          <StackedLine text="Student Association" fill="#ffbd4a" />
         </h1>
         <p className="mt-8 max-w-2xl font-[family-name:var(--font-inter)] text-base font-medium leading-relaxed text-white sm:text-lg">
-          Selamat datang di website resmi Himpunan Mahasiswa S1 Prodi Teknik Informatika
+          Welcome to the official website of Informatics Engineering Student Association
           Universitas Kristen Satya Wacana
         </p>
         <a

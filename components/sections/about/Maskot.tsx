@@ -39,7 +39,7 @@ export function Maskot() {
               className="pointer-events-none absolute -left-12 -top-10 -z-10 w-32 opacity-90"
             />
             <h2 className="font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
-              Maskot <span className="text-[#ffbd4a]">HMPTI</span>
+              HMPTI <span className="text-[#ffbd4a]">Mascot</span>
             </h2>
           </div>
           <p className="mt-5 max-w-xl font-[family-name:var(--font-inter)] text-lg font-medium leading-[26px] text-white sm:text-xl">

@@ -16,11 +16,11 @@ export function FAQSection() {
         <div className="mt-14 grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div>
             <h3 className="font-[family-name:var(--font-inter)] text-2xl font-bold leading-tight">
-              Pertanyaan Yang Sering Diajukan
+              Frequently Asked Questions
             </h3>
             <p className="mt-6 max-w-sm font-[family-name:var(--font-inter)] text-sm leading-relaxed text-white/70">
-              Masih ada pertanyaan yang belum terjawab atau memiliki kritik/saran? Jangan ragu
-              untuk menghubungi kami.
+              Still have unanswered questions or have feedback/suggestions? Don't hesitate to
+              contact us.
             </p>
             <div className="mt-7">
               <a

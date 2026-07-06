@@ -169,9 +169,9 @@ const humanitarianMembers: ProfileMemberWithUrl[] = [
 export const profileDepartments = [
   {
     id: "bph",
-    name: "BPH",
+    name: "Executive",
     description:
-      "As the strategic command center of HMPTI, BPH is fully responsible for the association's policy direction, managerial, and operational activities. This division ensures all work programs synergize optimally with HMPTI's vision, which is to realize an incubation room for digital talents who are critical, solution-oriented, and professional.",
+      "As the strategic command center of HMPTI, Executive is fully responsible for the association's policy direction, managerial, and operational activities. This division ensures all work programs synergize optimally with HMPTI's vision, which is to realize an incubation room for digital talents who are critical, solution-oriented, and professional.",
     members: bphMembers,
   },
   {

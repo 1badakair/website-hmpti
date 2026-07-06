@@ -20,13 +20,13 @@ export function AsdosRegistrationSection() {
             className="absolute -right-8 top-5 z-0 hidden h-[92px] w-[92px] object-contain opacity-70 md:block"
           />
           <h2 className="relative z-10 font-[family-name:var(--font-goldman)] text-[clamp(2.7rem,6vw,4rem)] leading-[0.9] text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
-            Pendaftaran<br />
+            Registration<br />
             <span className="text-[#ffbd4a]">ASDOS</span>
           </h2>
         </div>
 
         <p className="mx-auto mt-5 max-w-[560px] font-[family-name:var(--font-inter)] text-base font-bold leading-[1.35] text-white sm:text-xl">
-          Salurkan aspirasimu agar bisa di dengar dan di perbaiki kedepannya...
+          Voice your aspirations so they can be heard and improved in the future...
         </p>
 
         <a
@@ -39,11 +39,11 @@ export function AsdosRegistrationSection() {
           >
             <span className="h-3 w-3 rounded-sm bg-white" />
           </span>
-          Daftar Asisten Dosen
+          Register as Teaching Assistant
         </a>
 
         <p className="mt-5 font-[family-name:var(--font-inter)] text-sm font-medium text-white/68">
-          Pendaftaran belum dibuka
+          Registration is not open yet
         </p>
       </div>
     </section>

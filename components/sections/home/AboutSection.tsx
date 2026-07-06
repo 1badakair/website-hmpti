@@ -38,7 +38,7 @@ export function AboutSection() {
           </div>
           <div className="absolute bottom-5 left-1/2 w-[78%] -translate-x-1/2 rounded-full bg-black/45 px-4 py-2 text-center font-[family-name:var(--font-inter)] text-xs backdrop-blur">
             Xavier Wijaya
-            <span className="block text-white/70">Ketua HMPTI</span>
+            <span className="block text-white/70">HMPTI Chairman</span>
           </div>
         </div>
       </div>

@@ -33,10 +33,7 @@ export function AcademicHero() {
           </span>
         </h1>
         <p className="mt-7 max-w-[916px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.45] text-white sm:mt-10 sm:text-[22px] lg:mt-12">
-          Pusat informasi dan layanan akademik HMPTI untuk mendukung perjalanan
-          studimu. Temukan berbagai peluang beasiswa, perlombaan, dan seminar,
-          serta jadikan ini ruang resmi untuk menyuarakan aspirasimu demi
-          kemajuan bersama.
+          HMPTI's academic information and services center to support your study journey. Discover various scholarship opportunities, competitions, and seminars, and make this the official space to voice your aspirations for mutual progress.
         </p>
       </div>
 

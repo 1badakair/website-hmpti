@@ -34,7 +34,7 @@ export function ProfileStructureSection() {
 
       <div className="relative mx-auto max-w-[1177px]">
         <h2 className="text-center font-[family-name:var(--font-goldman)] text-4xl leading-none text-white sm:text-6xl">
-          Struktur <span className="text-[#ffbd4a]">HMPTI</span>
+          HMPTI <span className="text-[#ffbd4a]">Structure</span>
         </h2>
 
         <div className="mt-12 rounded-[25px] border border-[#a0aec0] bg-[#032a79] p-5 shadow-[0_32px_80px_rgba(0,0,0,0.24)] sm:p-7 lg:p-[30px]">

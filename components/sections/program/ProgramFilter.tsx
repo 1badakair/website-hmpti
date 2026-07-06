@@ -50,7 +50,7 @@ export function ProgramFilter({
               id="program-search"
               value={query}
               onChange={(event) => onQueryChange(event.target.value)}
-              placeholder="Search activity"
+              placeholder="Search HMPTI program..."
               className="min-w-0 flex-1 bg-transparent font-[family-name:var(--font-inter)] text-sm text-[#001b4b] outline-none placeholder:text-[#001b4b] sm:text-lg"
             />
           </div>
@@ -63,7 +63,7 @@ export function ProgramFilter({
         </div>
       </form>
 
-      <div className="mx-auto grid max-w-[991px] gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+      <div className="mx-auto grid max-w-[991px] gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5">
         {allCategories.map((category) => {
           const active = activeCategory === category
 

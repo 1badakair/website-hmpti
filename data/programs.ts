@@ -22,9 +22,8 @@ export const programs: ProgramSummary[] = [
 ]
 
 export const programCategories: ProgramCategory[] = [
-  "Internal",
-  "Extra Academic",
-  "Academic",
+  "Structured",
+  "Unstructured",
 ]
 
 export const programPageItems: Program[] = [
@@ -32,7 +31,7 @@ export const programPageItems: Program[] = [
     id: "program-001",
     slug: "bebek-belajar-bersama-akademik",
     title: "Bebek (Learn Together Academically)",
-    category: "Academic",
+    category: "Structured",
     description:
       "A collaborative learning space to help students understand course materials and prepare for academic evaluations.",
     content:
@@ -57,7 +56,7 @@ export const programPageItems: Program[] = [
     id: "program-002",
     slug: "kelas-internal-react-dasar",
     title: "Basic React Internal Class",
-    category: "Internal",
+    category: "Unstructured",
     description:
       "Member development class to learn components, state, and basic workflows in building web interfaces.",
     content:
@@ -82,7 +81,7 @@ export const programPageItems: Program[] = [
     id: "program-003",
     slug: "workshop-ui-ux-kreatif",
     title: "Creative UI/UX Workshop",
-    category: "Extra Academic",
+    category: "Unstructured",
     description:
       "Digital product design workshop to hone research, wireframing, and prototyping skills.",
     content:
@@ -107,7 +106,7 @@ export const programPageItems: Program[] = [
     id: "program-004",
     slug: "mentoring-asisten-dosen",
     title: "Teaching Assistant Mentoring",
-    category: "Academic",
+    category: "Structured",
     description:
       "Preparation program for prospective teaching assistants through communication, technical, and class mentoring ethics training.",
     content:
@@ -132,7 +131,7 @@ export const programPageItems: Program[] = [
     id: "program-005",
     slug: "kolaborasi-teknologi-komunitas",
     title: "Community Technology Collaboration",
-    category: "Extra Academic",
+    category: "Unstructured",
     description:
       "Cross-community collaborative activities to develop ideas, creations, and technology networks.",
     content:

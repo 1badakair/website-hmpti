@@ -3,27 +3,27 @@ import Image from "next/image"
 const galleryItems = [
   {
     id: "main",
-    title: "Kegiatan akademik HMPTI",
+    title: "HMPTI academic activities",
     image: "/figma/gallery-1.jpg",
   },
   {
     id: "thumb-1",
-    title: "Diskusi akademik",
+    title: "Academic discussion",
     image: "/figma/gallery-2.jpg",
   },
   {
     id: "thumb-2",
-    title: "Ruang kelas",
+    title: "Classroom",
     image: "/figma/gallery-3.jpg",
   },
   {
     id: "thumb-3",
-    title: "Kolaborasi mahasiswa",
+    title: "Student collaboration",
     image: "/figma/gallery-4.jpg",
   },
   {
     id: "thumb-4",
-    title: "Belajar bersama",
+    title: "Learning together",
     image: "/figma/gallery-5.jpg",
   },
 ]
@@ -50,7 +50,7 @@ export function AsdosGallerySection() {
             className="absolute -right-7 top-2 z-0 hidden h-[72px] w-[72px] object-contain opacity-70 md:block"
           />
           <h2 className="relative z-10 font-[family-name:var(--font-goldman)] text-[clamp(2.4rem,5vw,3.4rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
-            Galeri <span className="text-[#ffbd4a]">Academics</span>
+            Academics <span className="text-[#ffbd4a]">Gallery</span>
           </h2>
         </div>
 

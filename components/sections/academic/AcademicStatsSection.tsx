@@ -74,10 +74,10 @@ export function AcademicStatsSection() {
 
         <div className="flex flex-col justify-center lg:items-start lg:pl-2">
           <h3 className="font-[family-name:var(--font-inter)] text-xl font-bold leading-tight text-white sm:text-2xl">
-            Punya info akademik?
+            Have academic info?
           </h3>
           <p className="mt-2 max-w-[230px] font-[family-name:var(--font-inter)] text-sm leading-6 text-white/65 sm:mt-3">
-            Untuk share info edukatif lainnya.
+            To share other educational info.
           </p>
           <button
             type="button"

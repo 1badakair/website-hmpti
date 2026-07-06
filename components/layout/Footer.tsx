@@ -21,13 +21,8 @@ const socials = [
 ]
 
 const contacts = [
-  { icon: "/figma/social/email.svg", label: "Email", value: "hmpti@university.ac.id" },
-  { icon: "/figma/social/whatsapp.svg", label: "WhatsApp", value: "+62 812 3456 7890" },
-  {
-    icon: "/figma/social/location.svg",
-    label: "Secretariat",
-    value: "Engineering Faculty Building, 2nd Floor HMPTI Room",
-  },
+  { icon: "/figma/social/email.svg", label: "Email", value: "hmp.s1.ti@adm.uksw.edu" },
+  { icon: "/figma/social/whatsapp.svg", label: "Instagram", value: "@hmptiuksw" },
 ]
 
 export function Footer() {

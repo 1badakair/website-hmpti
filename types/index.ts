@@ -14,7 +14,7 @@ export type Program = {
   materials: string[]
 }
 
-export type ProgramCategory = "Internal" | "Extra Academic" | "Academic"
+export type ProgramCategory = "Structured" | "Unstructured"
 
 export type ProgramSummary = {
   id: string

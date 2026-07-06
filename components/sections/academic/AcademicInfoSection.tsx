@@ -46,8 +46,7 @@ export function AcademicInfoSection() {
             HMPTI <span className="text-[#ffbd4a]">Info</span>
           </h2>
           <p className="mx-auto mt-6 max-w-[724px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.45] text-white sm:mt-10 sm:text-[22px] lg:mt-[52px]">
-            Search for seminar info, scholarships, and the latest interesting programs
-            lainnya.
+            Search for seminar info, scholarships, and the latest interesting programs.
           </p>
         </div>
 
@@ -75,7 +74,7 @@ export function AcademicInfoSection() {
 
         {filteredPosts.length === 0 && (
           <div className="mt-9 rounded-[16px] border-2 border-white/20 bg-white/[0.06] px-6 py-12 text-center font-[family-name:var(--font-inter)] text-white/70">
-            Info akademik belum ditemukan. Coba kata kunci atau kategori lain.
+            Academic info not found. Try another keyword or category.
           </div>
         )}
       </div>
