@@ -27,7 +27,7 @@ export function AcademicCategoryPage({ category }: AcademicCategoryPageProps) {
   }, [activeScope, category.items, query])
 
   return (
-    <section className="relative -mt-[35px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-[132px] pt-[178px] sm:px-8 lg:px-16">
+    <section className="relative -mt-[35px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-24 pt-24 sm:px-8 sm:pb-[116px] sm:pt-[140px] lg:px-16 lg:pt-[178px]">
       <div className="mx-auto max-w-[1168px]">
         <AcademicCategoryFilter
           activeScope={activeScope}
@@ -36,14 +36,14 @@ export function AcademicCategoryPage({ category }: AcademicCategoryPageProps) {
           query={query}
         />
 
-        <div className="mx-auto mt-[95px] grid max-w-[990px] gap-x-10 gap-y-12 lg:grid-cols-2">
+        <div className="mx-auto mt-12 grid max-w-[990px] gap-x-10 gap-y-8 sm:mt-16 sm:gap-y-12 lg:grid-cols-2 lg:mt-[95px]">
           {filteredItems.map((item) => (
             <AcademicCategoryCard item={item} key={item.id} />
           ))}
         </div>
 
         {filteredItems.length === 0 && (
-          <div className="mx-auto mt-[95px] max-w-[990px] rounded-[16px] border-2 border-white/20 bg-white/[0.06] px-6 py-12 text-center font-[family-name:var(--font-inter)] text-white/70">
+          <div className="mx-auto mt-12 max-w-[990px] rounded-[16px] border-2 border-white/20 bg-white/[0.06] px-6 py-10 text-center font-[family-name:var(--font-inter)] text-white/70 sm:mt-[95px] sm:py-12">
             Info belum ditemukan. Coba kata kunci atau filter lain.
           </div>
         )}

@@ -1,9 +1,6 @@
 import Image from "next/image"
-import { galleryItems } from "@/data/gallery"
 
 export function AboutSection() {
-  const profileImage = galleryItems[1]
-
   return (
     <section id="explore" className="relative px-5 pt-24 sm:px-8 lg:px-16">
       <Image
@@ -32,16 +29,16 @@ export function AboutSection() {
         <div className="relative mx-auto w-full max-w-[310px]">
           <div className="overflow-hidden rounded-[28px] border border-[#ffbd4a] bg-[#001a48] p-2 shadow-[0_20px_55px_rgba(0,0,0,0.35)]">
             <Image
-              src={profileImage.imageUrl}
-              alt={profileImage.title}
+              src="/figma/xavier.png"
+              alt="Xavier Wijaya"
               width={264}
               height={402}
               className="h-[420px] w-full rounded-[20px] object-cover"
             />
           </div>
           <div className="absolute bottom-5 left-1/2 w-[78%] -translate-x-1/2 rounded-full bg-black/45 px-4 py-2 text-center font-[family-name:var(--font-inter)] text-xs backdrop-blur">
-            HMPTI UKSW
-            <span className="block text-white/70">Company Profile</span>
+            Xavier Wijaya
+            <span className="block text-white/70">Ketua HMPTI</span>
           </div>
         </div>
       </div>

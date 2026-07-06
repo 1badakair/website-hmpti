@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Goldman, Inter, Work_Sans } from "next/font/google";
 import "./globals.css";
+import BetaNotice from "@/components/layout/BetaNotice";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -34,7 +35,10 @@ export default function RootLayout({
       lang="id"
       className={`${workSans.variable} ${goldman.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <BetaNotice />
+        {children}
+      </body>
     </html>
   );
 }

@@ -15,7 +15,7 @@ export function AcademicCategoryHero({
   const accentTitle = restWords.join(" ")
 
   return (
-    <section className="relative -mt-[101px] min-h-[735px] overflow-hidden bg-[#002a75] px-5 pt-[286px] sm:px-8 lg:px-16">
+    <section className="relative -mt-[101px] min-h-[560px] overflow-hidden bg-[#002a75] px-5 pt-[218px] sm:min-h-[650px] sm:px-8 sm:pt-[250px] lg:min-h-[735px] lg:px-16 lg:pt-[286px]">
       <Image
         src="/figma/star-sparkle.svg"
         alt=""
@@ -45,17 +45,17 @@ export function AcademicCategoryHero({
           </h1>
         </div>
 
-        <p className="mx-auto mt-8 max-w-[760px] font-[family-name:var(--font-inter)] text-base font-bold leading-[1.35] text-white sm:text-[22px]">
+        <p className="mx-auto mt-6 max-w-[760px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.35] text-white sm:mt-8 sm:text-[22px]">
           {subtitle}
         </p>
 
         <a
           href="#"
-          className="mx-auto mt-11 inline-flex h-[70px] w-full max-w-[440px] items-center justify-center gap-4 rounded-[10px] bg-[#f9a825] px-8 font-[family-name:var(--font-inter)] text-xl font-bold text-white shadow-[0_16px_36px_rgba(249,168,37,0.18)] transition hover:bg-[#ffbd4a]"
+          className="mx-auto mt-8 inline-flex h-[52px] w-fit max-w-full items-center justify-center gap-3 rounded-[10px] bg-[#f9a825] px-6 font-[family-name:var(--font-inter)] text-sm font-bold text-white shadow-[0_16px_36px_rgba(249,168,37,0.18)] transition hover:bg-[#ffbd4a] sm:mt-11 sm:h-[60px] sm:px-8 sm:text-base"
         >
           <span
             aria-hidden="true"
-            className="grid h-9 w-9 place-items-center rounded-[8px] border-2 border-white"
+            className="grid h-7 w-7 place-items-center rounded-[8px] border-2 border-white sm:h-8 sm:w-8"
           >
             <span className="h-3 w-3 rounded-sm bg-white" />
           </span>

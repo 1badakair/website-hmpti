@@ -37,7 +37,7 @@ export function HeroSection() {
             </a>
             <a
               className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
-              href="#explore"
+              href="#kontak"
             >
               Contact Us
             </a>
@@ -61,7 +61,7 @@ export function HeroSection() {
           <div className="h-px flex-1 bg-[#ffbd4a]/35" />
           <p className="text-center font-[family-name:var(--font-inter)] text-sm font-bold">
             HMPTI UKSW
-            <span className="block text-[10px] font-normal text-white/55">Periode 2025</span>
+            <span className="block text-[10px] font-normal text-white/55">Periode 2026</span>
           </p>
           <div className="h-px flex-1 bg-[#ffbd4a]/35" />
         </div>

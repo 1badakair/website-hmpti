@@ -21,7 +21,7 @@ export function AcademicCategoryCard({ item }: AcademicCategoryCardProps) {
         </div>
       </div>
 
-      <div className="p-7 font-[family-name:var(--font-inter)]">
+      <div className="p-5 font-[family-name:var(--font-inter)] sm:p-7">
         <div className="flex flex-wrap items-center gap-3 text-xs text-white/70">
           <span className="inline-flex items-center gap-1.5">
             <svg
@@ -48,16 +48,16 @@ export function AcademicCategoryCard({ item }: AcademicCategoryCardProps) {
           </span>
         </div>
 
-        <h2 className="mt-5 font-[family-name:var(--font-inter)] text-2xl font-bold leading-tight text-white">
+        <h2 className="mt-4 font-[family-name:var(--font-inter)] text-xl font-bold leading-tight text-white sm:mt-5 sm:text-2xl">
           {item.title}
         </h2>
-        <p className="mt-4 line-clamp-4 text-sm leading-6 text-white/72">
+        <p className="mt-3 line-clamp-4 text-sm leading-6 text-white/72 sm:mt-4">
           {item.description}
         </p>
 
         <a
           href="#"
-          className="mt-7 inline-flex h-[44px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0d75df] text-sm font-bold text-white transition hover:bg-[#1688ff]"
+          className="mt-5 inline-flex h-10 w-full items-center justify-center gap-2 rounded-[10px] bg-[#0d75df] text-sm font-bold text-white transition hover:bg-[#1688ff] sm:mt-7 sm:h-[44px]"
         >
           Baca Selengkapnya
           <span

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function AsdosRegistrationSection() {
   return (
-    <section className="relative bg-[#001b4b] px-5 pb-[150px] pt-6 sm:px-8 lg:px-16">
+    <section className="relative bg-[#001b4b] px-5 pb-24 pt-4 sm:px-8 sm:pb-[130px] sm:pt-6 lg:px-16">
       <div className="relative z-10 mx-auto max-w-[720px] text-center">
         <div className="relative mx-auto inline-block px-10 py-4">
           <Image
@@ -31,7 +31,7 @@ export function AsdosRegistrationSection() {
 
         <a
           href="#"
-          className="mx-auto mt-9 inline-flex h-[58px] w-full max-w-[360px] items-center justify-center gap-3 rounded-[8px] bg-[#d98800] px-6 font-[family-name:var(--font-inter)] text-base font-bold text-white shadow-[0_14px_34px_rgba(249,168,37,0.2)] transition hover:bg-[#f9a825]"
+          className="mx-auto mt-8 inline-flex h-[52px] w-fit max-w-full items-center justify-center gap-3 rounded-[8px] bg-[#d98800] px-6 font-[family-name:var(--font-inter)] text-sm font-bold text-white shadow-[0_14px_34px_rgba(249,168,37,0.2)] transition hover:bg-[#f9a825] sm:mt-9 sm:h-[58px] sm:text-base"
         >
           <span
             aria-hidden="true"

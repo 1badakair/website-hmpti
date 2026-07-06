@@ -14,7 +14,7 @@ export function AcademicCategoryFilter({
   query,
 }: AcademicCategoryFilterProps) {
   return (
-    <div className="mx-auto max-w-[1168px] rounded-[25px] border-2 border-white/25 bg-[linear-gradient(140deg,rgba(255,255,255,0.28),rgba(5,96,195,0.28),rgba(0,42,117,0.5))] px-5 py-8 shadow-[8px_12px_70px_rgba(0,0,0,0.2)]">
+    <div className="mx-auto max-w-[1168px] rounded-[25px] border-2 border-white/25 bg-[linear-gradient(140deg,rgba(255,255,255,0.28),rgba(5,96,195,0.28),rgba(0,42,117,0.5))] px-4 py-6 shadow-[8px_12px_70px_rgba(0,0,0,0.2)] sm:px-5 sm:py-8">
       <form
         className="mx-auto flex w-full max-w-[698px] flex-col gap-5 sm:h-[53px] sm:flex-row"
         onSubmit={(event) => event.preventDefault()}
@@ -53,13 +53,13 @@ export function AcademicCategoryFilter({
         </button>
       </form>
 
-      <div className="mx-auto mt-8 grid max-w-[980px] gap-5 md:grid-cols-3">
+      <div className="mx-auto mt-6 grid max-w-[980px] gap-3 sm:mt-8 sm:gap-5 md:grid-cols-3">
         {scopes.map((scope) => (
           <button
             key={scope}
             type="button"
             onClick={() => onScopeChange(scope)}
-            className={`h-[50px] rounded-[9px] border font-[family-name:var(--font-inter)] text-sm font-semibold transition ${
+            className={`h-11 rounded-[9px] border font-[family-name:var(--font-inter)] text-sm font-semibold transition sm:h-[50px] ${
               activeScope === scope
                 ? "border-[#f9a825] bg-[#f9a825] text-white"
                 : "border-white/35 bg-[#001b4b] text-white hover:border-[#ffbd4a]"

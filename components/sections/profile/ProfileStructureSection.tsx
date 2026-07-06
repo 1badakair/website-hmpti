@@ -16,7 +16,7 @@ export function ProfileStructureSection() {
   )
 
   return (
-    <section className="relative px-5 pb-28 pt-20 sm:px-8 lg:px-16">
+    <section id="struktur-hmpti" className="relative scroll-mt-32 px-5 pb-28 pt-20 sm:px-8 lg:px-16">
       <Image
         src="/figma/star-22.svg"
         alt=""
@@ -55,7 +55,7 @@ export function ProfileStructureSection() {
                 </p>
               </div>
 
-              <div className="mt-10 grid justify-items-center gap-8 sm:grid-cols-2 xl:grid-cols-3 xl:justify-items-start">
+              <div className="mt-10 grid grid-cols-2 justify-items-center gap-4 sm:gap-8 xl:grid-cols-3 xl:justify-items-start">
                 {activeDepartment.members.map((member) => (
                   <ProfileMemberCard key={member.id} member={member} />
                 ))}

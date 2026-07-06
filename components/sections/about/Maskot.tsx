@@ -9,7 +9,7 @@ export function Maskot() {
   const activeTab = maskotTabs.find((t) => t.id === active) ?? maskotTabs[0]
 
   return (
-    <section className="relative px-5 py-20 sm:px-8 lg:px-16">
+    <section id="mascot" className="relative scroll-mt-32 px-5 py-20 sm:px-8 lg:px-16">
       <Image
         src="/figma/star-rough.png"
         alt=""

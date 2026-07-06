@@ -1,6 +1,6 @@
 import type { Department, ProfileDepartment, ProfileMember } from "@/types"
 
-const memberImage = "/figma/profile-member.png"
+const memberImage = "/figma/xavier.png"
 
 type ProfileMemberWithUrl = ProfileMember & {
   profileUrl?: string
@@ -11,7 +11,7 @@ const bphMembers: ProfileMemberWithUrl[] = [
     id: "bph-1",
     name: "Xavier",
     role: "Ketua",
-    image: memberImage,
+    image: "/figma/xavier.png",
     profileUrl: "https://xavierwijayahere.vercel.app/",
   },
   {

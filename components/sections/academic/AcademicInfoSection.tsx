@@ -24,7 +24,7 @@ export function AcademicInfoSection() {
   }, [activeCategory, query])
 
   return (
-    <section className="relative -mt-[39px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-12 pt-[118px] sm:px-8 lg:px-16">
+    <section className="relative -mt-[39px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-12 pt-20 sm:px-8 sm:pt-[100px] lg:px-16 lg:pt-[118px]">
       <Image
         src="/figma/star-rough.png"
         alt=""
@@ -45,20 +45,20 @@ export function AcademicInfoSection() {
           <h2 className="font-[family-name:var(--font-goldman)] text-[clamp(3rem,6vw,4rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
             HMPTI <span className="text-[#ffbd4a]">Info</span>
           </h2>
-          <p className="mx-auto mt-[52px] max-w-[724px] font-[family-name:var(--font-inter)] text-base font-bold leading-[1.45] text-white sm:text-[22px]">
+          <p className="mx-auto mt-6 max-w-[724px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.45] text-white sm:mt-10 sm:text-[22px] lg:mt-[52px]">
             Cari info seminar, beasiswa dan program menarik dan terbaru
             lainnya.
           </p>
         </div>
 
-        <div className="mt-[76px]">
+        <div className="mt-10 sm:mt-14 lg:mt-[76px]">
           <AcademicFilter
             query={query}
             onQueryChange={setQuery}
           />
         </div>
 
-        <div className="mt-9 grid gap-[27px] md:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-5 sm:grid-cols-2 md:grid-cols-2 xl:grid-cols-4 xl:gap-[27px]">
           {filteredPosts.map((post) => (
             <AcademicCard
               active={activeCategory === post.category}

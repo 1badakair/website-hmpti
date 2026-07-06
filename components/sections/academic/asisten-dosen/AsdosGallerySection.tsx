@@ -32,7 +32,7 @@ export function AsdosGallerySection() {
   const [mainImage, ...thumbnails] = galleryItems
 
   return (
-    <section className="relative bg-[#001b4b] px-5 pb-[150px] pt-2 sm:px-8 lg:px-16">
+    <section className="relative bg-[#001b4b] px-5 pb-24 pt-2 sm:px-8 sm:pb-[130px] lg:px-16">
       <div className="mx-auto max-w-[900px]">
         <div className="relative mx-auto w-fit px-8 py-3 text-center">
           <Image
@@ -54,7 +54,7 @@ export function AsdosGallerySection() {
           </h2>
         </div>
 
-        <div className="relative mt-12 aspect-[16/8.6] overflow-hidden rounded-[13px] border border-white/20 bg-[#002a75] shadow-[0_20px_56px_rgba(0,0,0,0.28)]">
+        <div className="relative mt-9 aspect-video overflow-hidden rounded-[13px] border border-white/20 bg-[#002a75] shadow-[0_20px_56px_rgba(0,0,0,0.28)] sm:mt-12 sm:aspect-[16/8.6]">
           <Image
             src={mainImage.image}
             alt={mainImage.title}
@@ -64,7 +64,7 @@ export function AsdosGallerySection() {
           />
         </div>
 
-        <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-9 sm:gap-5 lg:grid-cols-4">
           {thumbnails.map((item) => (
             <div
               className="relative aspect-[16/9] overflow-hidden rounded-[10px] border border-white/15 bg-[#002a75] shadow-[0_12px_34px_rgba(0,0,0,0.18)]"

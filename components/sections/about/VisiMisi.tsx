@@ -10,7 +10,7 @@ export function VisiMisi() {
   const [active, setActive] = useState<Tab>("Visi")
 
   return (
-    <section className="relative px-5 py-20 sm:px-8 lg:px-16">
+    <section id="visi-misi" className="relative scroll-mt-32 px-5 py-20 sm:px-8 lg:px-16">
       <h2 className="mb-12 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
         Visi <span className="text-[#ffbd4a]">Misi</span>
       </h2>

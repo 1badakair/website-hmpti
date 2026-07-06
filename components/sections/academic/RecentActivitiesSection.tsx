@@ -3,19 +3,19 @@ import Image from "next/image"
 
 export function RecentActivitiesSection() {
   return (
-    <section id="recent-activities" className="bg-[#001b4b] px-5 pb-20 pt-[86px] sm:px-8 lg:px-16">
+    <section id="recent-activities" className="bg-[#001b4b] px-5 pb-16 pt-16 sm:px-8 sm:pb-20 sm:pt-[86px] lg:px-16">
       <div className="mx-auto max-w-[1183px]">
         <h2 className="text-center font-[family-name:var(--font-inter)] text-[22px] font-bold leading-tight text-white sm:text-2xl">
           Recent Activities
         </h2>
 
-        <div className="mt-8 grid gap-[37px] lg:grid-cols-2">
+        <div className="mt-8 grid gap-6 sm:gap-[37px] lg:grid-cols-2">
           {recentAcademicActivities.map((post) => (
             <article
               key={post.id}
               className="grid overflow-hidden rounded-[16px] border border-white/70 bg-[#002a75] shadow-[0_18px_48px_rgba(0,0,0,0.28)] sm:min-h-[320px] sm:grid-cols-[270px_1fr]"
             >
-              <div className="relative min-h-[260px] sm:min-h-full">
+              <div className="relative min-h-[190px] sm:min-h-full">
                 <Image
                   src={post.image ?? "/figma/academic-recent.png"}
                   alt={post.title}
@@ -24,13 +24,13 @@ export function RecentActivitiesSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="flex min-h-[320px] flex-col justify-center px-6 py-7 font-[family-name:var(--font-inter)]">
+              <div className="flex flex-col justify-center px-5 py-6 font-[family-name:var(--font-inter)] sm:min-h-[320px] sm:px-6 sm:py-7">
                 {post.date && (
                   <p className="text-sm font-semibold text-[#ffbd4a]">
                     {post.date}
                   </p>
                 )}
-                <h3 className="mt-3 text-2xl font-bold leading-tight text-white">
+                <h3 className="mt-3 text-xl font-bold leading-tight text-white sm:text-2xl">
                   {post.title}
                 </h3>
                 {post.organizer && (

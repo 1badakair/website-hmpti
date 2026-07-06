@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function AcademicHero() {
   return (
-    <section className="relative -mt-[101px] min-h-[790px] overflow-hidden bg-[#002a75] px-5 pt-[242px] sm:px-8 lg:px-16">
+    <section className="relative -mt-[101px] min-h-[640px] overflow-hidden bg-[#002a75] px-5 pt-[214px] sm:min-h-[720px] sm:px-8 sm:pt-[230px] lg:min-h-[790px] lg:px-16 lg:pt-[242px]">
       <Image
         src="/figma/star-outline.svg"
         alt=""
@@ -32,7 +32,7 @@ export function AcademicHero() {
             IT Professionals
           </span>
         </h1>
-        <p className="mt-12 max-w-[916px] font-[family-name:var(--font-inter)] text-base font-bold leading-[1.45] text-white sm:text-[22px]">
+        <p className="mt-7 max-w-[916px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.45] text-white sm:mt-10 sm:text-[22px] lg:mt-12">
           Pusat informasi dan layanan akademik HMPTI untuk mendukung perjalanan
           studimu. Temukan berbagai peluang beasiswa, perlombaan, dan seminar,
           serta jadikan ini ruang resmi untuk menyuarakan aspirasimu demi
@@ -40,7 +40,7 @@ export function AcademicHero() {
         </p>
       </div>
 
-      <div className="pointer-events-none absolute left-1/2 top-[514px] z-0 h-[372px] w-[min(614px,90vw)] -translate-x-1/2 overflow-hidden">
+      <div className="pointer-events-none absolute left-1/2 top-[440px] z-0 h-[260px] w-[min(500px,88vw)] -translate-x-1/2 overflow-hidden sm:top-[480px] sm:h-[320px] sm:w-[min(580px,88vw)] lg:top-[514px] lg:h-[372px] lg:w-[min(614px,90vw)]">
         <Image
           src="/figma/academic-mascot.png"
           alt="Maskot Academic HMPTI"
