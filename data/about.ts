@@ -1,38 +1,38 @@
 export const aboutIntro =
-  "Himpunan Mahasiswa Program Studi Teknik Informatika (HMPTI) Universitas Kristen Satya Wacana (UKSW) adalah organisasi intra-kampus yang menjadi wadah sinergi utama bagi mahasiswa. Kami berkomitmen untuk memfasilitasi pengembangan kompetensi talenta digital, menampung aspirasi secara transparan, dan mendorong kontribusi nyata mahasiswa terhadap masyarakat melalui literasi teknologi."
+  "The Informatics Engineering Student Association (HMPTI) at Satya Wacana Christian University (UKSW) is an intra-campus organization that serves as the main synergy platform for students. We are committed to facilitating the development of digital talent competencies, transparently accommodating aspirations, and encouraging real student contributions to society through technological literacy."
 
 export type FeatureIcon = "users" | "trophy" | "star"
 
 export const aboutFeatures: { title: string; description: string; icon: FeatureIcon }[] = [
   {
     icon: "users",
-    title: "Organisasi Solid",
-    description: "Pengurus berdedikasi dengan struktur yang jelas dan transparan.",
+    title: "Solid Organization",
+    description: "Dedicated management with a clear and transparent structure.",
   },
   {
     icon: "trophy",
-    title: "Akademik Unggul",
-    description: "Program mentoring dan pengembangan akademik berkelanjutan.",
+    title: "Academic Excellence",
+    description: "Continuous mentoring and academic development programs.",
   },
   {
     icon: "star",
-    title: "Komunitas Inklusif",
-    description: "Ruang tumbuh untuk semua mahasiswa tanpa terkecuali.",
+    title: "Inclusive Community",
+    description: "A room to grow for all students without exception.",
   },
 ]
 
 export const visiContent =
-  "Mewujudkan HMP S1 TI sebagai pusat inkubasi talenta digital yang kritis dan solutif, serta menjadi sinergi utama dalam mendorong kompetensi profesional mahasiswa program Studi Teknik Informatika"
+  "To realize HMP S1 TI as an incubation center for critical and solution-oriented digital talents, and to become the main synergy in driving the professional competencies of Informatics Engineering students."
 
 export const misiContent = [
-  "Mengoptimalkan peran HMP S1 TI sebagai wadah aspirasi digital yang transparan dan kolaboratif antar mahasiswa TI",
-  "Mengembangkan dan memfasilitasi porgram akselerasi skill (teknis dan non-teknis) yang relevan dengan kebutuhan Industri Teknologi terkini",
-  "Membangun budaya kepedulian dan kontribusi sosial di kalangan mahasiswa TI",
-  "Mengadakan pengabdian masyarakat berbasis teknologi, fokus pada peningkatan literasi digital dan pemecahan masalah digital",
+  "Optimizing the role of HMP S1 TI as a transparent and collaborative digital aspiration platform among IT students",
+  "Developing and facilitating skill acceleration programs (technical and non-technical) relevant to the current needs of the Technology Industry",
+  "Building a culture of social care and contribution among IT students",
+  "Conducting technology-based community service, focusing on improving digital literacy and digital problem-solving",
 ]
 
 export const maskotIntro =
-  "Memperkenalkan representasi semangat dan jiwa revolusioner dalam bentuk maskot robot burung hantu bernama Owiie"
+  "Introducing the representation of our revolutionary spirit and soul in the form of a robot owl mascot named Owiie"
 
 // Mascot tab copy — taken from the 3 variants of the Figma component set
 // (Property 1 = Default / Variant2 / Variant3).
@@ -45,36 +45,36 @@ export type MaskotTab = {
 
 export const maskotTabs: MaskotTab[] = [
   {
-    id: "Filosofi",
+    id: "Philosophy",
     content:
-      "Maskot burung hantu futuristik HMTI UKSW melambangkan kecerdasan, ketelitian, dan kebijaksanaan yang berpadu dengan kekuatan teknologi modern. Burung hantu dikenal sebagai simbol ilmu dan pengamat tajam dalam kegelapan, yang merepresentasikan kemampuan mahasiswa Teknik Informatika dalam memecahkan masalah kompleks di dunia digital.",
+      "The futuristic owl mascot of HMPTI UKSW symbolizes intelligence, thoroughness, and wisdom combined with the power of modern technology. The owl is known as a symbol of knowledge and a sharp observer in the dark, representing the ability of Informatics Engineering students to solve complex problems in the digital world.",
   },
   {
-    id: "Konsep",
-    intro: "Setiap bagian dari Owiie dirancang dengan tujuan dan arti yang spesifik:",
+    id: "Concept",
+    intro: "Every part of Owiie is designed with a specific purpose and meaning:",
     bullets: [
       {
         label: "Head/Ear Tips",
-        text: "Terinspirasi dari telinga burung hantu untuk pendengaran (reseptif terhadap aspirasi).",
+        text: "Inspired by owl ears for hearing (receptive to aspirations).",
       },
       {
-        label: "Visor/Wajah Robot",
-        text: "Area abu-abu pada wajah melambangkan antarmuka (interface) antara manusia dan teknologi.",
+        label: "Visor/Robot Face",
+        text: "The gray area on the face symbolizes the interface between humans and technology.",
       },
       {
         label: "Floating Hands",
-        text: "Tangan yang melayang menunjukkan teknologi futuristik dan fleksibilitas dalam bekerja.",
+        text: "Floating hands indicate futuristic technology and flexibility in work.",
       },
       {
         label: "Body Pattern",
-        text: "Pola biru pada tubuh memberikan kesan aerodinamis dan modern.",
+        text: "The blue pattern on the body gives an aerodynamic and modern impression.",
       },
     ],
   },
   {
-    id: "Makna",
+    id: "Meaning",
     content:
-      "Sentuhan robot dan elemen teknologi menggambarkan inovasi, adaptasi, dan kesiapan menghadapi era industri digital. Maskot ini menjadi simbol mahasiswa HMTI UKSW yang tidak hanya cerdas secara akademik, tetapi juga visioner, beretika, dan siap menjadi penjaga masa depan teknologi.",
+      "The robot touch and technological elements describe innovation, adaptation, and readiness to face the digital industry era. This mascot becomes a symbol of HMPTI UKSW students who are not only academically smart, but also visionary, ethical, and ready to become the guardians of the future of technology.",
   },
 ]
 

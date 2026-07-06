@@ -67,7 +67,7 @@ export function ProgramCard({ program }: ProgramCardProps) {
           href={`/program/${program.slug}`}
           className="mt-6 flex h-[39px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0560c3] font-[family-name:var(--font-inter)] text-sm font-semibold text-white transition hover:bg-[#0a70da]"
         >
-          Baca Selengkapnya
+          Read More
           <span aria-hidden="true" className="text-xs">
             &gt;
           </span>

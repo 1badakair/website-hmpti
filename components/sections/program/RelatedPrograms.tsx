@@ -27,7 +27,7 @@ export function RelatedPrograms({ programs }: RelatedProgramsProps) {
             href="/program"
             className="inline-flex w-fit rounded-full border border-[#ffbd4a] px-5 py-3 font-[family-name:var(--font-inter)] text-sm font-bold text-[#ffbd4a] transition hover:bg-[#ffbd4a] hover:text-[#062a5c]"
           >
-            Lihat Program Lain
+            View Other Programs
           </Link>
         </div>
 

@@ -32,7 +32,7 @@ export function ProfileMemberCard({ member }: ProfileMemberCardProps) {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Lihat Profil
+          View Profile
           <span aria-hidden="true">›</span>
         </a>
       ) : (

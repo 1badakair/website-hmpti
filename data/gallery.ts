@@ -1,12 +1,12 @@
 export const galleryItems = [
   {
     id: "pengurus",
-    title: "Pengurus HMPTI UKSW",
+    title: "HMPTI UKSW Committee",
     imageUrl: "/figma/kegiatan-1.png",
   },
   {
     id: "ketua",
-    title: "Ketua HMPTI",
+    title: "Chairman of HMPTI",
     imageUrl: "/figma/ketua.png",
   },
 ]

@@ -46,7 +46,7 @@ export function AcademicInfoSection() {
             HMPTI <span className="text-[#ffbd4a]">Info</span>
           </h2>
           <p className="mx-auto mt-6 max-w-[724px] font-[family-name:var(--font-inter)] text-sm font-bold leading-[1.45] text-white sm:mt-10 sm:text-[22px] lg:mt-[52px]">
-            Cari info seminar, beasiswa dan program menarik dan terbaru
+            Search for seminar info, scholarships, and the latest interesting programs
             lainnya.
           </p>
         </div>

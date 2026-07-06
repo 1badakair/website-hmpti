@@ -20,7 +20,7 @@ export function AcademicCategoryFilter({
         onSubmit={(event) => event.preventDefault()}
       >
         <label className="sr-only" htmlFor="academic-category-search">
-          Cari info akademik
+          Search academic info
         </label>
         <div className="flex min-h-[52px] flex-1 items-center gap-3 rounded-[10px] border border-[#d5d5d5] bg-white/70 px-5">
           <svg
@@ -41,7 +41,7 @@ export function AcademicCategoryFilter({
             id="academic-category-search"
             value={query}
             onChange={(event) => onQueryChange(event.target.value)}
-            placeholder="Cari tahu kegiatan"
+            placeholder="Search activity"
             className="min-w-0 flex-1 bg-transparent font-[family-name:var(--font-inter)] text-sm font-medium text-[#001b4b] outline-none placeholder:text-[#001b4b]/90 sm:text-base"
           />
         </div>
@@ -49,7 +49,7 @@ export function AcademicCategoryFilter({
           type="submit"
           className="min-h-[53px] rounded-[13px] border-2 border-white/20 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-base font-semibold text-white transition hover:bg-[#0a70da] sm:w-[107px] sm:px-0"
         >
-          Cari
+          Search
         </button>
       </form>
 

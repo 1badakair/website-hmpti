@@ -22,7 +22,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "HMPTI UKSW",
   description:
-    "Website Himpunan Mahasiswa Program Studi Teknik Informatika UKSW.",
+    "Website of Informatics Engineering Student Association UKSW.",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="id"
+      lang="en"
       className={`${workSans.variable} ${goldman.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

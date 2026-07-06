@@ -9,14 +9,14 @@ import { ProgramFilter } from "./ProgramFilter"
 
 export function ProgramListSection() {
   const [query, setQuery] = useState("")
-  const [activeCategory, setActiveCategory] = useState<ProgramCategory | "Semua">("Semua")
+  const [activeCategory, setActiveCategory] = useState<ProgramCategory | "All">("All")
 
   const filteredPrograms = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase()
 
     return programPageItems.filter((program) => {
       const matchesCategory =
-        activeCategory === "Semua" || program.category === activeCategory
+        activeCategory === "All" || program.category === activeCategory
       const searchable = `${program.title} ${program.category} ${program.description}`.toLowerCase()
       const matchesQuery = !normalizedQuery || searchable.includes(normalizedQuery)
 
@@ -94,7 +94,7 @@ export function ProgramListSection() {
           type="button"
           className="mx-auto mt-[58px] flex h-[59px] w-full max-w-[400px] items-center justify-center gap-3 rounded-[10px] border border-white bg-[#032a79] font-[family-name:var(--font-inter)] text-lg font-bold text-white transition hover:bg-[#0560c3]"
         >
-          Lihat Program Lain
+          View Other Programs
           <span
             aria-hidden="true"
             className="grid h-6 w-6 place-items-center rounded-full border border-white/80 text-xs"

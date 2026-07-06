@@ -59,7 +59,7 @@ export function AcademicCategoryCard({ item }: AcademicCategoryCardProps) {
           href="#"
           className="mt-5 inline-flex h-10 w-full items-center justify-center gap-2 rounded-[10px] bg-[#0d75df] text-sm font-bold text-white transition hover:bg-[#1688ff] sm:mt-7 sm:h-[44px]"
         >
-          Baca Selengkapnya
+          Read More
           <span
             aria-hidden="true"
             className="grid h-4 w-4 place-items-center rounded-full border border-white/80 text-[10px]"

@@ -1,46 +1,46 @@
 export const academicPosts = [
   {
     image: "/figma/activity-1.png",
-    category: "Lomba",
-    status: "Deadline Dekat",
+    category: "Competition",
+    status: "Deadline Approaching",
     statusClass: "border-[#f9a825]/25 bg-[#f9a825]/15 text-[#f9a825]",
-    title: "Hackathon Nasional InformaticFest 2025",
+    title: "National Hackathon InformaticFest 2025",
     description:
-      "Kompetisi coding tahunan terbesar dengan total hadiah 50 juta rupiah. Daftarkan tim kamu sekarang!",
-    date: "28 Juni 2025",
-    readTime: "3 menit",
+      "The biggest annual coding competition with a total prize of 50 million rupiah. Register your team now!",
+    date: "28 June 2025",
+    readTime: "3 minutes",
   },
   {
     image: "/figma/activity-2.png",
     category: "Seminar",
-    status: "Segera",
+    status: "Soon",
     statusClass: "border-[#0560c3]/25 bg-[#0560c3]/15 text-[#0560c3]",
-    title: "Web3 & AI Summit: Masa Depan Teknologi Indonesia",
+    title: "Web3 & AI Summit: The Future of Indonesia's Technology",
     description:
-      "Hadirkan pakar industri terkemuka membahas tren AI, blockchain, dan transformasi digital.",
-    date: "5 Juli 2025",
-    readTime: "4 menit",
+      "Featuring top industry experts discussing AI trends, blockchain, and digital transformation.",
+    date: "5 July 2025",
+    readTime: "4 minutes",
   },
   {
     image: "/figma/activity-3.png",
-    category: "Prestasi",
-    status: "Baru",
+    category: "Achievement",
+    status: "New",
     statusClass: "border-[#00a88f]/25 bg-[#00a88f]/15 text-[#00a88f]",
-    title: "Beasiswa Unggulan HMPTI 2025 Batch II",
+    title: "HMPTI Excellence Scholarship 2025 Batch II",
     description:
-      "Kesempatan dukungan studi untuk mahasiswa aktif dengan rekam prestasi akademik dan organisasi.",
-    date: "12 Juli 2025",
-    readTime: "5 menit",
+      "Study support opportunities for active students with a track record of academic and organizational achievements.",
+    date: "12 July 2025",
+    readTime: "5 minutes",
   },
 ]
 
 export const academicPagePosts = [
   {
     id: "info-lomba",
-    title: "Lomba",
+    title: "Competition",
     category: "lomba",
     description:
-      "Kumpulan informasi kompetisi teknologi, desain, dan inovasi untuk mahasiswa Informatika.",
+      "A collection of information on technology, design, and innovation competitions for Informatics students.",
     image: "/figma/academic-lomba.png",
     badge: "Achievement",
     href: "/academic/lomba",
@@ -50,27 +50,27 @@ export const academicPagePosts = [
     title: "Seminar",
     category: "seminar",
     description:
-      "Agenda seminar, kuliah umum, dan diskusi industri yang relevan untuk pengembangan skill.",
+      "Agenda for seminars, public lectures, and industry discussions relevant for skill development.",
     image: "/figma/academic-seminar.png",
     badge: "Achievement",
     href: "/academic/seminar",
   },
   {
     id: "info-beasiswa",
-    title: "Beasiswa",
+    title: "Scholarship",
     category: "beasiswa",
     description:
-      "Peluang pendanaan studi, bantuan pendidikan, dan program apresiasi prestasi mahasiswa.",
+      "Study funding opportunities, educational assistance, and student achievement appreciation programs.",
     image: "/figma/academic-beasiswa.png",
     badge: "Achievement",
     href: "/academic/beasiswa",
   },
   {
     id: "magang-bersertifikat",
-    title: "Magang & Sertifikasi",
+    title: "Internship & Certification",
     category: "magang",
     description:
-      "Kurasi peluang magang bersertifikat dan program karier untuk calon profesional IT.",
+      "Curated opportunities for certified internships and career programs for future IT professionals.",
     image: "/figma/academic-magang.png",
     badge: "Achievement",
     href: "/academic/magang-sertifikasi",
@@ -78,10 +78,10 @@ export const academicPagePosts = [
 ] satisfies import("@/types").AcademicPost[]
 
 export const academicCategories = [
-  { id: "lomba", label: "Lomba" },
+  { id: "lomba", label: "Competition" },
   { id: "seminar", label: "Seminar" },
-  { id: "beasiswa", label: "Beasiswa" },
-  { id: "magang", label: "Magang" },
+  { id: "beasiswa", label: "Scholarship" },
+  { id: "magang", label: "Internship" },
 ] satisfies Array<{ id: import("@/types").AcademicCategory; label: string }>
 
 export const academicStats = [
@@ -96,15 +96,15 @@ export const recentAcademicActivities = [
     title: "TECHCOMFEST 2026 - CTF",
     category: "lomba",
     description:
-      "Kompetisi Capture The Flag tingkat nasional untuk mengasah kemampuan cyber security.",
+      "National level Capture The Flag competition to hone cyber security skills.",
     image: "/figma/academic-recent.png",
-    date: "Pendaftaran Dibuka",
+    date: "Registration Open",
     organizer: "UKM Polytechnic Computer Club Polines",
-    tags: ["Nasional", "Cyber Security"],
-    registration: "15 Oktober - 13 Desember",
-    eventDate: "27 Desember",
+    tags: ["National", "Cyber Security"],
+    registration: "15 October - 13 December",
+    eventDate: "27 December",
     cost: "Rp90.000",
-    buttonLabel: "Info Lomba",
+    buttonLabel: "Competition Info",
     href: "#",
   },
   {
@@ -112,15 +112,15 @@ export const recentAcademicActivities = [
     title: "TECHCOMFEST 2026 - CTF",
     category: "lomba",
     description:
-      "Kompetisi Capture The Flag tingkat nasional untuk mengasah kemampuan cyber security.",
+      "National level Capture The Flag competition to hone cyber security skills.",
     image: "/figma/academic-recent.png",
-    date: "Pendaftaran Dibuka",
+    date: "Registration Open",
     organizer: "UKM Polytechnic Computer Club Polines",
-    tags: ["Nasional", "Cyber Security"],
-    registration: "15 Oktober - 13 Desember",
-    eventDate: "27 Desember",
+    tags: ["National", "Cyber Security"],
+    registration: "15 October - 13 December",
+    eventDate: "27 December",
     cost: "Rp90.000",
-    buttonLabel: "Info Lomba",
+    buttonLabel: "Competition Info",
     href: "#",
   },
 ] satisfies import("@/types").AcademicPost[]

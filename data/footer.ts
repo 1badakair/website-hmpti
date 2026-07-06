@@ -1,10 +1,10 @@
 export const footerLinks = {
-  Navigasi: ["Beranda", "Tentang Kami", "Pengurus", "Program & Kegiatan", "Academic Hub"],
+  Navigation: ["Home", "About Us", "Committee", "Programs & Activities", "Academic Hub"],
   "Academic Hub": [
-    "Aspirasi Mahasiswa",
-    "Info Lomba",
-    "Info Beasiswa",
-    "Jadwal Seminar",
-    "Riset & Publikasi",
+    "Student Aspirations",
+    "Competition Info",
+    "Scholarship Info",
+    "Seminar Schedule",
+    "Research & Publications",
   ],
 }

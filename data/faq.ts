@@ -1,7 +1,7 @@
 export const faqItems = [
-  "Apa itu HMPTI?",
-  "Bagaimana cara bergabung dengan HMPTI?",
-  "Apa manfaat bergabung di HMPTI?",
-  "Apa saja kegiatan yang dilakukan HMPTI?",
-  "Apakah HMPTI hanya untuk mahasiswa Informatika?",
+  "What is HMPTI?",
+  "How can I join HMPTI?",
+  "What are the benefits of joining HMPTI?",
+  "What activities does HMPTI do?",
+  "Is HMPTI only for Informatics students?",
 ]

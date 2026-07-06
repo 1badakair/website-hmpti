@@ -3,8 +3,8 @@ import Link from "next/link"
 import { footerLinks } from "@/data/footer"
 
 const linkHref: Record<string, string> = {
-  Beranda: "/",
-  "Tentang Kami": "/about",
+  Home: "/",
+  "About Us": "/about",
 }
 
 const institutionLogos = [
@@ -25,8 +25,8 @@ const contacts = [
   { icon: "/figma/social/whatsapp.svg", label: "WhatsApp", value: "+62 812 3456 7890" },
   {
     icon: "/figma/social/location.svg",
-    label: "Sekretariat",
-    value: "Gedung Fakultas Teknik, Lantai 2 Ruang HMPTI",
+    label: "Secretariat",
+    value: "Engineering Faculty Building, 2nd Floor HMPTI Room",
   },
 ]
 
@@ -55,7 +55,7 @@ export function Footer() {
             className="mt-5 h-8 w-auto object-contain"
           />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/55">
-            Himpunan Mahasiswa Program Studi Teknik Informatika UKSW.
+            Informatics Engineering Student Association UKSW.
           </p>
           <div className="mt-6 flex gap-3">
             {socials.map((social) => (
@@ -89,7 +89,7 @@ export function Footer() {
         ))}
         <div>
           <h4 className="text-sm font-bold uppercase tracking-[0.1em] text-[#f9a825]">
-            Kontak
+            Contact
           </h4>
           <div className="mt-5 space-y-5 text-sm">
             {contacts.map((c) => (
@@ -108,8 +108,8 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto mt-12 flex max-w-[1120px] flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
-        <p>© 2025 HMPTI - Himpunan Mahasiswa Program Studi Teknik Informatika. Hak Cipta Dilindungi.</p>
-        <p>Dibuat dengan hati oleh Tim Media Kreatif HMPTI</p>
+        <p>© 2025 HMPTI - Informatics Engineering Student Association. All Rights Reserved.</p>
+        <p>Made with heart by HMPTI Creative Media Team</p>
       </div>
     </footer>
   )

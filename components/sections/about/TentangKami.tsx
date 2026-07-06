@@ -64,7 +64,7 @@ export function TentangKami() {
 
       <div className="mx-auto max-w-[900px] text-center">
         <h2 className="font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
-          Tentang <span className="text-[#ffbd4a]">Kami</span>
+          About <span className="text-[#ffbd4a]">Us</span>
         </h2>
         <p className="mx-auto mt-7 max-w-[880px] font-[family-name:var(--font-inter)] text-base font-medium leading-[26px] text-white sm:text-lg">
           {aboutIntro}

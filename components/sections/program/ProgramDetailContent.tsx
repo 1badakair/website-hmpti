@@ -13,7 +13,7 @@ export function ProgramDetailContent({ program }: ProgramDetailContentProps) {
             Deskripsi Kegiatan
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-goldman)] text-3xl text-white">
-            Tentang Program
+            About Program
           </h2>
           <p className="mt-5 font-[family-name:var(--font-inter)] text-base leading-8 text-white/70">
             {program.content}

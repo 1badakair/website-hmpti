@@ -1,10 +1,10 @@
 import type { ProgramCategory } from "@/types"
 
 type ProgramFilterProps = {
-  activeCategory: ProgramCategory | "Semua"
+  activeCategory: ProgramCategory | "All"
   categories: ProgramCategory[]
   query: string
-  onCategoryChange: (category: ProgramCategory | "Semua") => void
+  onCategoryChange: (category: ProgramCategory | "All") => void
   onQueryChange: (query: string) => void
 }
 
@@ -15,7 +15,7 @@ export function ProgramFilter({
   onCategoryChange,
   onQueryChange,
 }: ProgramFilterProps) {
-  const allCategories: Array<ProgramCategory | "Semua"> = ["Semua", ...categories]
+  const allCategories: Array<ProgramCategory | "All"> = ["All", ...categories]
 
   return (
     <div className="space-y-[26px]">
@@ -29,7 +29,7 @@ export function ProgramFilter({
       >
         <div className="grid w-full max-w-[698px] gap-3 sm:grid-cols-[1fr_107px]">
           <label className="sr-only" htmlFor="program-search">
-            Cari program
+            Search program
           </label>
           <div className="flex min-h-[52px] items-center gap-3 rounded-[10px] bg-white/55 px-5">
             <svg
@@ -50,7 +50,7 @@ export function ProgramFilter({
               id="program-search"
               value={query}
               onChange={(event) => onQueryChange(event.target.value)}
-              placeholder="Cari tahu kegiatan"
+              placeholder="Search activity"
               className="min-w-0 flex-1 bg-transparent font-[family-name:var(--font-inter)] text-sm text-[#001b4b] outline-none placeholder:text-[#001b4b] sm:text-lg"
             />
           </div>
@@ -58,7 +58,7 @@ export function ProgramFilter({
             type="submit"
             className="min-h-[53px] rounded-[10px] border-2 border-white/30 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-lg font-medium text-white transition hover:bg-[#0a70da]"
           >
-            Cari
+            Search
           </button>
         </div>
       </form>

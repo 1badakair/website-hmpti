@@ -25,15 +25,15 @@ export type AcademicCategoryPageData = {
 }
 
 const defaultSubtitle =
-  "Salurkan aspirasimu agar bisa didengar dan diperbaiki kedepannya."
+  "Channel your aspirations so they can be heard and improved in the future."
 
 const baseItems = [
   {
     id: "internal-1",
     title: "Bebek (Belajar Bersama Akademik)",
     description:
-      "Program belajar internal HMIF yang ditujukan untuk BPH dan seluruh staf HMIF. Materi mencakup HTML, CSS, Tailwind, JavaScript, React/Next, dan lain-lain.",
-    date: "12 Agustus 2025",
+      "An internal learning program by HMIF aimed at the BPH and all HMIF staff. Materials cover HTML, CSS, Tailwind, JavaScript, React/Next, and others.",
+    date: "12 August 2025",
     image: "/figma/program-card.png",
     scope: "Internal",
     mode: "Offline",
@@ -42,8 +42,8 @@ const baseItems = [
     id: "nasional-1",
     title: "Tech Competition Roadmap",
     description:
-      "Rangkuman peluang kompetisi nasional untuk mahasiswa Informatika yang ingin mengembangkan portofolio akademik dan prestasi.",
-    date: "18 Agustus 2025",
+      "A summary of national competition opportunities for Informatics students looking to develop their academic portfolio and achievements.",
+    date: "18 August 2025",
     image: "/figma/academic-lomba.png",
     scope: "Nasional",
     mode: "Online",
@@ -52,8 +52,8 @@ const baseItems = [
     id: "internasional-1",
     title: "Global Academic Opportunity",
     description:
-      "Informasi akademik internasional, program riset, seminar global, dan peluang pengembangan diri lintas kampus.",
-    date: "25 Agustus 2025",
+      "International academic information, research programs, global seminars, and cross-campus self-development opportunities.",
+    date: "25 August 2025",
     image: "/figma/academic-seminar.png",
     scope: "Internasional",
     mode: "Hybrid",
@@ -62,8 +62,8 @@ const baseItems = [
     id: "internal-2",
     title: "Academic Sharing Session",
     description:
-      "Sesi berbagi antar mahasiswa untuk membahas peluang akademik, persiapan kelas, dan strategi mengikuti kegiatan kampus.",
-    date: "30 Agustus 2025",
+      "A sharing session among students to discuss academic opportunities, class preparation, and strategies for campus activities.",
+    date: "30 August 2025",
     image: "/figma/gallery-3.jpg",
     scope: "Internal",
     mode: "Offline",
@@ -73,31 +73,31 @@ const baseItems = [
 const academicCategoryConfigs = [
   {
     slug: "lomba",
-    title: "Info Lomba",
+    title: "Competition Info",
     subtitle: defaultSubtitle,
-    buttonText: "Beri Info Lomba",
-    category: "Lomba",
+    buttonText: "Provide Competition Info",
+    category: "Competition",
   },
   {
     slug: "seminar",
-    title: "Info Seminar",
+    title: "Seminar Info",
     subtitle: defaultSubtitle,
-    buttonText: "Beri Info Seminar",
+    buttonText: "Provide Seminar Info",
     category: "Seminar",
   },
   {
     slug: "beasiswa",
-    title: "Info Beasiswa",
+    title: "Scholarship Info",
     subtitle: defaultSubtitle,
-    buttonText: "Beri Info Beasiswa",
-    category: "Beasiswa",
+    buttonText: "Provide Scholarship Info",
+    category: "Scholarship",
   },
   {
     slug: "magang-sertifikasi",
-    title: "Magang & Sertifikasi",
+    title: "Internship & Certification",
     subtitle: defaultSubtitle,
-    buttonText: "Beri Info Magang & Sertifikasi",
-    category: "Akademik",
+    buttonText: "Provide Internship & Certification Info",
+    category: "Academic",
   },
 ] satisfies {
   slug: AcademicCategorySlug

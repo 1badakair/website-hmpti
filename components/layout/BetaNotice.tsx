@@ -15,9 +15,8 @@ export default function BetaNotice() {
               clipRule="evenodd"
             />
           </svg>
-          <strong>Pengumuman:</strong> Website HMPTI saat ini masih dalam tahap
-          pengembangan (Beta). Beberapa fitur mungkin belum berfungsi dengan
-          sempurna.
+          <strong>Announcement:</strong> HMPTI Website is currently in development
+          (Beta). Some features may not work perfectly yet.
         </p>
       </div>
       {/* Spacer to push content below the fixed banner */}
