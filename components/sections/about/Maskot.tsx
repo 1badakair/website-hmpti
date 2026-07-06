@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { maskotIntro, maskotTabs } from "@/data/about"
+import { MotionSection } from "@/components/ui/MotionSection"
 
 export function Maskot() {
   const [active, setActive] = useState(maskotTabs[0].id)
@@ -27,7 +28,7 @@ export function Maskot() {
         className="pointer-events-none absolute right-[6%] bottom-[6%] -z-10 block w-28 opacity-60 lg:w-56"
       />
 
-      <div className="mx-auto grid max-w-[1120px] items-center gap-12 lg:grid-cols-[1fr_minmax(0,520px)] lg:items-end">
+      <MotionSection className="mx-auto grid max-w-[1120px] items-center gap-12 lg:grid-cols-[1fr_minmax(0,520px)] lg:items-end">
         <div>
           <div className="relative w-fit">
             <Image
@@ -56,8 +57,8 @@ export function Maskot() {
                   type="button"
                   onClick={() => setActive(tab.id)}
                   aria-pressed={isActive}
-                  className={`min-w-0 rounded-[15px] border border-white px-2 py-2 text-sm font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition sm:px-8 sm:py-2.5 sm:text-xl font-[family-name:var(--font-inter)] ${
-                    isActive ? "bg-[#a0aec0]" : "bg-[#002a75] hover:bg-[#003491]"
+                  className={`min-w-0 rounded-[15px] border border-white px-2 py-2 text-sm font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition duration-300 sm:px-8 sm:py-2.5 sm:text-xl font-[family-name:var(--font-inter)] ${
+                    isActive ? "bg-[#a0aec0] scale-100" : "bg-[#002a75] hover:bg-[#003491] hover:scale-105 active:scale-95"
                   }`}
                 >
                   {tab.id}
@@ -88,14 +89,14 @@ export function Maskot() {
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[15px] bg-white shadow-[0_20px_55px_rgba(0,0,0,0.35)]">
+        <div className="overflow-hidden rounded-[15px] bg-white shadow-[0_20px_55px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:scale-[1.02]">
           <div className="relative aspect-[495/278] w-full">
             <Image
               src="/figma/owiie.svg"
               alt="Owiie — maskot HMPTI"
               fill
               sizes="(min-width: 1024px) 520px, 92vw"
-              className="object-contain p-4"
+              className="object-contain p-4 transition-transform duration-500 hover:scale-110"
             />
           </div>
           <div className="bg-[#002a75] py-5 text-center">
@@ -104,7 +105,7 @@ export function Maskot() {
             </span>
           </div>
         </div>
-      </div>
+      </MotionSection>
     </section>
   )
 }

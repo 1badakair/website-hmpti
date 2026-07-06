@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { MotionSection } from "@/components/ui/MotionSection"
 
 export function ProfileHero() {
   return (
@@ -19,7 +20,7 @@ export function ProfileHero() {
         className="pointer-events-none absolute right-[8%] top-36 h-8 w-8 rotate-12 sm:h-10 sm:w-10"
         priority
       />
-      <div className="mx-auto flex min-h-[450px] max-w-[916px] flex-col items-center justify-center text-center">
+      <MotionSection className="mx-auto flex min-h-[450px] max-w-[916px] flex-col items-center justify-center text-center">
         <h1 className="max-w-[760px] font-[family-name:var(--font-goldman)] text-[clamp(2.75rem,7vw,4.1rem)] font-bold leading-none text-white drop-shadow-[0_5px_0_#002260]">
           Incubating Ideas,{" "}
           <span className="text-[#ffbd4a] [text-shadow:0_4px_0_#002260]">
@@ -31,7 +32,7 @@ export function ProfileHero() {
           solid collaboration, we are ready to break boundaries, optimize potential, and
           execute every idea into a real masterpiece.
         </p>
-      </div>
+      </MotionSection>
     </section>
   )
 }

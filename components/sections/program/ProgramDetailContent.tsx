@@ -10,7 +10,7 @@ export function ProgramDetailContent({ program }: ProgramDetailContentProps) {
       <div className="mx-auto grid max-w-[1120px] gap-8 lg:grid-cols-[1.08fr_0.92fr]">
         <article className="rounded-[30px] border border-white/10 bg-white/[0.06] p-6 shadow-[0_20px_55px_rgba(0,0,0,0.18)] sm:p-8">
           <p className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-[#ffbd4a]">
-            Deskripsi Kegiatan
+            Activity Description
           </p>
           <h2 className="mt-4 font-[family-name:var(--font-goldman)] text-3xl text-white">
             About Program
@@ -22,19 +22,19 @@ export function ProgramDetailContent({ program }: ProgramDetailContentProps) {
 
         <aside className="rounded-[30px] border border-white/10 bg-[#07336d] p-6 shadow-[0_20px_55px_rgba(0,0,0,0.2)] sm:p-8">
           <p className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-[#ffbd4a]">
-            Informasi Program
+            Program Information
           </p>
           <div className="mt-6 space-y-5 font-[family-name:var(--font-inter)]">
-            <InfoRow label="Tanggal" value={program.date} />
-            <InfoRow label="Pelaksanaan" value={program.mode} />
-            <InfoRow label="Lokasi" value={program.location} />
-            <InfoRow label="Peserta" value={program.audience} />
+            <InfoRow label="Date" value={program.date} />
+            <InfoRow label="Mode" value={program.mode} />
+            <InfoRow label="Location" value={program.location} />
+            <InfoRow label="Audience" value={program.audience} />
           </div>
         </aside>
 
         <article className="rounded-[30px] border border-white/10 bg-[#07336d] p-6 shadow-[0_20px_55px_rgba(0,0,0,0.2)] sm:p-8">
           <p className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-[#ffbd4a]">
-            Materi Program
+            Program Materials
           </p>
           <ul className="mt-6 space-y-4 font-[family-name:var(--font-inter)] text-white/72">
             {program.materials.map((material) => (
@@ -48,7 +48,7 @@ export function ProgramDetailContent({ program }: ProgramDetailContentProps) {
 
         <article className="rounded-[30px] border border-white/10 bg-white/[0.06] p-6 shadow-[0_20px_55px_rgba(0,0,0,0.18)] sm:p-8">
           <p className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-[#ffbd4a]">
-            Manfaat Program
+            Program Benefits
           </p>
           <ul className="mt-6 space-y-4 font-[family-name:var(--font-inter)] text-white/72">
             {program.benefits.map((benefit) => (

@@ -1,25 +1,19 @@
 import { academicStats } from "@/data/academic"
 import Image from "next/image"
+import { Activity, Clock, Send } from "lucide-react"
+import { MotionSection } from "@/components/ui/MotionSection"
 
 export function AcademicStatsSection() {
   return (
     <section className="bg-[#001b4b] px-5 pb-10 pt-9 sm:px-8 sm:pb-12 sm:pt-[50px] lg:px-16">
-      <div className="mx-auto grid max-w-[1217px] gap-5 rounded-[12px] bg-[#002a75] px-5 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.24)] sm:px-6 sm:py-8 lg:min-h-[252px] lg:grid-cols-[1fr_1.04fr_0.58fr] lg:px-10 lg:py-[54px]">
+      <MotionSection className="mx-auto grid max-w-[1217px] gap-5 rounded-[12px] bg-[#002a75] px-5 py-6 shadow-[0_18px_50px_rgba(0,0,0,0.24)] sm:px-6 sm:py-8 lg:min-h-[252px] lg:grid-cols-[1fr_1.04fr_0.58fr] lg:px-10 lg:py-[54px]">
         <div>
           <p className="inline-flex items-center gap-2 font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-white/70">
             <span
               aria-hidden="true"
               className="grid h-7 w-7 place-items-center rounded-md bg-[#f9a825]/15 text-[#f9a825]"
             >
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24">
-                <path
-                  d="M4 13h4l2-6 4 12 2-6h4"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                />
-              </svg>
+              <Activity className="h-4 w-4" />
             </span>
             Portal Snapshot
           </p>
@@ -51,15 +45,7 @@ export function AcademicStatsSection() {
                 aria-hidden="true"
                 className="grid h-7 w-7 place-items-center rounded-md bg-white/10 text-white/70"
               >
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24">
-                  <path
-                    d="M12 6v6l3 2m-7.5 6h9a2 2 0 0 0 2-2v-6a6.5 6.5 0 1 0-13 0v6a2 2 0 0 0 2 2Z"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                  />
-                </svg>
+                <Clock className="h-4 w-4" />
               </span>
               Deadline Watch
             </p>
@@ -83,24 +69,11 @@ export function AcademicStatsSection() {
             type="button"
             className="mt-4 inline-flex h-[42px] w-fit items-center justify-center gap-2 rounded-[10px] bg-[#f9a825] px-6 font-[family-name:var(--font-inter)] text-sm font-bold text-white transition hover:bg-[#ffbd4a] sm:mt-6 sm:h-[44px] sm:px-7"
           >
-            <svg
-              aria-hidden="true"
-              className="h-4 w-4 shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M21 3 9.5 14.5M21 3l-7 18-4.5-6.5L3 10l18-7Z"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              />
-            </svg>
+            <Send className="h-4 w-4" />
             Submit News
           </button>
         </div>
-      </div>
+      </MotionSection>
     </section>
   )
 }

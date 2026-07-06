@@ -1,9 +1,13 @@
 import Image from "next/image"
 import { academicPosts } from "@/data/academic"
 
-function AcademicCard({ post }: { post: (typeof academicPosts)[number] }) {
+import { MotionSection } from "@/components/ui/MotionSection"
+import { MotionCard } from "@/components/ui/MotionCard"
+
+function AcademicCard({ post, index }: { post: (typeof academicPosts)[number], index: number }) {
   return (
-    <article className="w-full overflow-hidden rounded-2xl border border-[#002a75]/10 bg-white shadow-[0_4px_24px_rgba(0,42,117,0.12)]">
+    <MotionCard index={index} className="w-full h-full">
+      <article className="w-full h-full overflow-hidden rounded-2xl border border-[#002a75]/10 bg-white shadow-[0_4px_24px_rgba(0,42,117,0.12)]">
       <div className="relative h-44">
         <Image
           src={post.image}
@@ -32,7 +36,8 @@ function AcademicCard({ post }: { post: (typeof academicPosts)[number] }) {
           <span>{post.readTime}</span>
         </div>
       </div>
-    </article>
+      </article>
+    </MotionCard>
   )
 }
 
@@ -46,7 +51,7 @@ export function AcademicInfoSection() {
         height={647}
         className="pointer-events-none absolute right-[-220px] top-[-30px] opacity-70"
       />
-      <div className="mx-auto flex max-w-[1120px] flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+      <MotionSection className="mx-auto flex max-w-[1120px] flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h2 className="font-[family-name:var(--font-goldman)] text-5xl leading-none sm:text-7xl">
             Activity <span className="text-[#ffbd4a]">Highlights</span>
@@ -58,15 +63,15 @@ export function AcademicInfoSection() {
           </p>
         </div>
         <a
-          className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+          className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition duration-300 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] sm:h-9 sm:text-sm"
           href="#explore"
         >
           Read more
         </a>
-      </div>
+      </MotionSection>
       <div className="mx-auto mt-12 grid max-w-[1120px] gap-6 md:grid-cols-3">
-        {academicPosts.map((post) => (
-          <AcademicCard post={post} key={post.title} />
+        {academicPosts.map((post, i) => (
+          <AcademicCard post={post} key={post.title} index={i} />
         ))}
       </div>
     </section>

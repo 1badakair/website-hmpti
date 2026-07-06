@@ -7,6 +7,8 @@ import type { AcademicCategory } from "@/types"
 import { AcademicCard } from "./AcademicCard"
 import { AcademicFilter } from "./AcademicFilter"
 
+import { MotionSection } from "@/components/ui/MotionSection"
+
 export function AcademicInfoSection() {
   const [query, setQuery] = useState("")
   const [activeCategory, setActiveCategory] = useState<AcademicCategory | null>(null)
@@ -40,7 +42,7 @@ export function AcademicInfoSection() {
         className="absolute right-[11%] top-[285px] hidden h-[96px] w-[96px] object-contain md:block"
       />
 
-      <div className="mx-auto max-w-[1217px]">
+      <MotionSection className="mx-auto max-w-[1217px]">
         <div className="mx-auto max-w-[916px] text-center">
           <h2 className="font-[family-name:var(--font-goldman)] text-[clamp(3rem,6vw,4rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.9)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
             HMPTI <span className="text-[#ffbd4a]">Info</span>
@@ -77,7 +79,7 @@ export function AcademicInfoSection() {
             Academic info not found. Try another keyword or category.
           </div>
         )}
-      </div>
+      </MotionSection>
     </section>
   )
 }

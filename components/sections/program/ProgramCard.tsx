@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Calendar, ChevronRight } from "lucide-react"
 import type { Program } from "@/types"
 
 type ProgramCardProps = {
@@ -28,23 +29,10 @@ export function ProgramCard({ program }: ProgramCardProps) {
         </div>
       </div>
 
-      <div className="px-[33px] pb-[27px] pt-[12px]">
+      <div className="px-5 pb-5 pt-3 sm:px-[33px] sm:pb-[27px] sm:pt-[12px]">
         <div className="flex flex-wrap items-center justify-between gap-3 font-[family-name:var(--font-inter)]">
-          <div className="flex min-w-[145px] items-end gap-1.5 text-sm font-medium text-[#a0aec0]">
-            <svg
-              aria-hidden="true"
-              className="h-[15px] w-[15px] shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.8"
-              />
-            </svg>
+          <div className="flex min-w-[145px] items-center gap-1.5 text-sm font-medium text-[#a0aec0]">
+            <Calendar className="h-[15px] w-[15px] shrink-0" />
             <span>{program.date}</span>
           </div>
           <div className="flex gap-2 text-xs font-medium text-white">
@@ -57,7 +45,7 @@ export function ProgramCard({ program }: ProgramCardProps) {
           </div>
         </div>
 
-        <h2 className="mt-5 max-w-[337px] font-[family-name:var(--font-inter)] text-[22px] font-bold leading-tight text-white">
+        <h2 className="mt-5 max-w-[337px] font-[family-name:var(--font-inter)] text-xl font-bold leading-tight text-white sm:text-[22px]">
           {program.title}
         </h2>
         <p className="mt-4 min-h-[78px] font-[family-name:var(--font-inter)] text-[13px] leading-[1.32] text-white/90">
@@ -65,12 +53,10 @@ export function ProgramCard({ program }: ProgramCardProps) {
         </p>
         <Link
           href={`/program/${program.slug}`}
-          className="mt-6 flex h-[39px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0560c3] font-[family-name:var(--font-inter)] text-sm font-semibold text-white transition hover:bg-[#0a70da]"
+          className="mt-6 flex h-[39px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0560c3] font-[family-name:var(--font-inter)] text-sm font-semibold text-white transition duration-300 hover:bg-[#0a70da] hover:scale-[1.02] active:scale-[0.98]"
         >
           Read More
-          <span aria-hidden="true" className="text-xs">
-            &gt;
-          </span>
+          <ChevronRight className="h-4 w-4" />
         </Link>
       </div>
     </article>

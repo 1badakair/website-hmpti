@@ -3,6 +3,7 @@
 import { useState } from "react"
 import Image from "next/image"
 import { misiContent, visiContent } from "@/data/about"
+import { MotionSection } from "@/components/ui/MotionSection"
 
 type Tab = "Vision" | "Mission"
 
@@ -11,9 +12,11 @@ export function VisiMisi() {
 
   return (
     <section id="visi-misi" className="relative scroll-mt-32 px-5 py-20 sm:px-8 lg:px-16">
-      <h2 className="mb-12 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
-        Vision <span className="text-[#ffbd4a]">Mission</span>
-      </h2>
+      <MotionSection>
+        <h2 className="mb-12 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
+          Vision <span className="text-[#ffbd4a]">Mission</span>
+        </h2>
+      </MotionSection>
 
       <Image
         src="/figma/Star3.svg"
@@ -32,7 +35,7 @@ export function VisiMisi() {
         className="pointer-events-none absolute right-[-80px] top-[6%] z-0 block w-[150px] lg:w-[340px]"
       />
 
-      <div className="relative z-10 mx-auto max-w-[1022px]">
+      <MotionSection delay={0.2} className="relative z-10 mx-auto max-w-[1022px]">
         <div className="flex flex-col items-center justify-center gap-8 rounded-[25px] border-2 border-white/80 bg-[linear-gradient(145deg,rgba(255,255,255,0.4)_4%,rgba(133,190,255,0.24)_22%,rgba(6,94,194,0.4)_53%,rgba(3,45,92,0.4)_98%)] p-8 shadow-[8px_12px_80px_0_rgba(0,0,0,0.25)] lg:h-[552px] lg:flex-row lg:gap-[70px] lg:px-[68px]">
           <div className="flex w-full max-w-[222px] flex-col gap-[30px]">
             {(["Vision", "Mission"] as Tab[]).map((tab) => {
@@ -43,10 +46,10 @@ export function VisiMisi() {
                   type="button"
                   onClick={() => setActive(tab)}
                   aria-pressed={isActive}
-                  className={`flex h-[89px] items-center justify-center rounded-[20px] border-2 border-white/30 font-[family-name:var(--font-goldman)] text-4xl font-bold [paint-order:stroke] [-webkit-text-stroke:0.1em_#032a79] transition sm:text-5xl ${
+                  className={`flex h-[89px] items-center justify-center rounded-[20px] border-2 border-white/30 font-[family-name:var(--font-goldman)] text-4xl font-bold [paint-order:stroke] [-webkit-text-stroke:0.1em_#032a79] transition duration-300 sm:text-5xl ${
                     isActive
                       ? "bg-[#001b4b] text-[#f9a825]"
-                      : "bg-[#003491] text-[#a0aec0] hover:text-white"
+                      : "bg-[#003491] text-[#a0aec0] hover:text-white hover:border-white/60 active:scale-[0.98]"
                   }`}
                 >
                   {tab}
@@ -87,7 +90,7 @@ export function VisiMisi() {
             </div>
           </div>
         </div>
-      </div>
+      </MotionSection>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+import { Search } from "lucide-react"
+
 type AcademicFilterProps = {
   query: string
   onQueryChange: (query: string) => void
@@ -17,20 +19,7 @@ export function AcademicFilter({
           Search academic info
         </label>
         <div className="flex min-h-[52px] flex-1 items-center gap-3 rounded-[13px] border border-[#d5d5d5] bg-white/60 px-5">
-          <svg
-            aria-hidden="true"
-            className="h-5 w-5 shrink-0 text-[#001b4b]/70"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            />
-          </svg>
+          <Search className="h-5 w-5 shrink-0 text-[#001b4b]/70" />
           <input
             id="academic-search"
             value={query}
@@ -41,7 +30,7 @@ export function AcademicFilter({
         </div>
         <button
           type="submit"
-          className="min-h-[53px] rounded-[13px] border-2 border-white/20 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-base font-semibold text-white transition hover:bg-[#0a70da] sm:w-[107px] sm:px-0"
+          className="min-h-[53px] rounded-[13px] border-2 border-white/20 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-base font-semibold text-white transition duration-300 hover:bg-[#0a70da] hover:scale-[1.02] active:scale-[0.98] sm:w-[107px] sm:px-0"
         >
           Search
         </button>

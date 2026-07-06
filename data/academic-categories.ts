@@ -11,7 +11,7 @@ export type AcademicCategoryItem = {
   date: string
   image: string
   badge: string
-  scope: "Internal" | "Nasional" | "Internasional"
+  scope: "Internal" | "National" | "International"
   mode: string
 }
 
@@ -39,23 +39,23 @@ const baseItems = [
     mode: "Offline",
   },
   {
-    id: "nasional-1",
+    id: "national-1",
     title: "Tech Competition Roadmap",
     description:
       "A summary of national competition opportunities for Informatics students looking to develop their academic portfolio and achievements.",
     date: "18 August 2025",
     image: "/figma/academic-lomba.png",
-    scope: "Nasional",
+    scope: "National",
     mode: "Online",
   },
   {
-    id: "internasional-1",
+    id: "international-1",
     title: "Global Academic Opportunity",
     description:
       "International academic information, research programs, global seminars, and cross-campus self-development opportunities.",
     date: "25 August 2025",
     image: "/figma/academic-seminar.png",
-    scope: "Internasional",
+    scope: "International",
     mode: "Hybrid",
   },
   {

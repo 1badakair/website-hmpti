@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { galleryItems } from "@/data/gallery"
 
+import { MotionSection } from "@/components/ui/MotionSection"
+
 export function HeroSection() {
   const heroImage = galleryItems[0]
 
@@ -16,7 +18,7 @@ export function HeroSection() {
       />
       <div className="absolute left-[-180px] top-[419px] -z-10 h-96 w-96 rounded-full bg-[#005696]/25 blur-3xl" />
 
-      <div className="mx-auto grid max-w-[1216px] gap-10 pb-16 lg:grid-cols-[1fr_0.82fr] lg:items-center">
+      <MotionSection className="mx-auto grid max-w-[1216px] gap-10 pb-16 lg:grid-cols-[1fr_0.82fr] lg:items-center">
         <div className="max-w-2xl">
           <h1 className="font-[family-name:var(--font-goldman)] text-[clamp(3rem,8vw,5.8rem)] font-bold leading-[0.9] text-white drop-shadow-[0_5px_0_#002260]">
             <span className="block text-[#ffbd4a] [text-shadow:0_4px_0_#ffffff,0_9px_0_#002260]">
@@ -30,20 +32,20 @@ export function HeroSection() {
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
             <a
-              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition duration-300 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] sm:h-9 sm:text-sm"
               href="#explore"
             >
               Learn More
             </a>
             <a
-              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+              className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition duration-300 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] sm:h-9 sm:text-sm"
               href="#kontak"
             >
               Contact Us
             </a>
           </div>
         </div>
-      </div>
+      </MotionSection>
 
       <div className="mx-auto max-w-[1110px]">
         <div className="relative overflow-hidden rounded-[18px] border border-[#ffbd4a]/45 bg-[#001a48] p-2 shadow-[0_16px_50px_rgba(0,0,0,0.28)]">

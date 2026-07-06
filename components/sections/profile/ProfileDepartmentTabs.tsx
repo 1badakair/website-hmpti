@@ -20,10 +20,10 @@ export function ProfileDepartmentTabs({
 
         return (
           <button
-            className={`h-[53px] min-w-36 rounded-[10px] border-2 border-white/30 px-8 py-3 text-center font-[family-name:var(--font-inter)] text-sm transition sm:text-base lg:w-full ${
+            className={`h-[53px] min-w-36 rounded-[10px] border-2 border-white/30 px-8 py-3 text-center font-[family-name:var(--font-inter)] text-sm transition duration-300 sm:text-base lg:w-full ${
               isActive
-                ? "bg-[#f9a825] font-bold text-white shadow-[0_10px_24px_rgba(249,168,37,0.24)]"
-                : "bg-[#001b4b] font-medium text-white hover:border-[#f9a825]/70 hover:bg-[#082c70]"
+                ? "bg-[#f9a825] font-bold text-white shadow-[0_10px_24px_rgba(249,168,37,0.24)] scale-100"
+                : "bg-[#001b4b] font-medium text-white hover:border-[#f9a825]/70 hover:bg-[#082c70] hover:scale-[1.02] active:scale-[0.98]"
             }`}
             key={department.id}
             onClick={() => onChange(department.id)}

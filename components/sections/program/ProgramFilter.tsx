@@ -1,4 +1,5 @@
 import type { ProgramCategory } from "@/types"
+import { Search } from "lucide-react"
 
 type ProgramFilterProps = {
   activeCategory: ProgramCategory | "All"
@@ -32,20 +33,7 @@ export function ProgramFilter({
             Search program
           </label>
           <div className="flex min-h-[52px] items-center gap-3 rounded-[10px] bg-white/55 px-5">
-            <svg
-              aria-hidden="true"
-              className="h-[26px] w-[26px] shrink-0 text-[#001b4b]"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-              />
-            </svg>
+            <Search className="h-6 w-6 shrink-0 text-[#001b4b]" />
             <input
               id="program-search"
               value={query}
@@ -56,7 +44,7 @@ export function ProgramFilter({
           </div>
           <button
             type="submit"
-            className="min-h-[53px] rounded-[10px] border-2 border-white/30 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-lg font-medium text-white transition hover:bg-[#0a70da]"
+            className="min-h-[53px] rounded-[10px] border-2 border-white/30 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-lg font-medium text-white transition duration-300 hover:bg-[#0a70da] hover:scale-[1.02] active:scale-[0.98]"
           >
             Search
           </button>
@@ -72,8 +60,8 @@ export function ProgramFilter({
               key={category}
               type="button"
               onClick={() => onCategoryChange(category)}
-              className={`flex h-[53px] items-center justify-center rounded-[10px] border-2 border-white/30 px-5 font-[family-name:var(--font-inter)] text-base font-medium text-white transition sm:text-lg lg:px-4 ${
-                active ? "bg-[#f9a825]" : "bg-[#001b4b] hover:bg-[#07336d]"
+              className={`flex h-[53px] items-center justify-center rounded-[10px] border-2 border-white/30 px-5 font-[family-name:var(--font-inter)] text-base font-medium text-white transition duration-300 sm:text-lg lg:px-4 ${
+                active ? "bg-[#f9a825] scale-100 shadow-[0_10px_24px_rgba(249,168,37,0.24)]" : "bg-[#001b4b] hover:bg-[#07336d] hover:scale-[1.02] active:scale-[0.98]"
               }`}
             >
               {category}

@@ -6,6 +6,9 @@ import { programCategories, programPageItems } from "@/data/programs"
 import type { ProgramCategory } from "@/types"
 import { ProgramCard } from "./ProgramCard"
 import { ProgramFilter } from "./ProgramFilter"
+import { MotionSection } from "@/components/ui/MotionSection"
+import { MotionCard } from "@/components/ui/MotionCard"
+import { ChevronDown } from "lucide-react"
 
 export function ProgramListSection() {
   const [query, setQuery] = useState("")
@@ -55,7 +58,7 @@ export function ProgramListSection() {
         className="absolute left-[6%] top-[146px] hidden h-12 w-12 opacity-95 lg:block"
       />
 
-      <div className="relative mx-auto max-w-[1168px]">
+      <MotionSection className="relative mx-auto max-w-[1168px]">
         <div className="mx-auto max-w-[916px] text-center">
           <div className="relative mx-auto w-fit">
             <h2 className="relative font-[family-name:var(--font-goldman)] text-[clamp(2.6rem,5.3vw,4.1rem)] leading-none text-white [-webkit-text-stroke:1px_rgba(255,255,255,0.85)] [text-shadow:0_4px_0_rgba(0,0,0,0.18)]">
@@ -63,8 +66,7 @@ export function ProgramListSection() {
             </h2>
           </div>
           <p className="mx-auto mt-7 max-w-[724px] font-[family-name:var(--font-inter)] text-base font-medium leading-normal text-white sm:text-2xl">
-            Temukan berbagai program kerja yang telah dan akan dilaksanakan oleh
-            HMPTI
+            Discover various work programs that have been and will be implemented by HMPTI
           </p>
         </div>
 
@@ -79,30 +81,32 @@ export function ProgramListSection() {
         </div>
 
         <div className="mx-auto mt-[54px] grid max-w-[991px] gap-x-[41px] gap-y-[50px] lg:grid-cols-2">
-          {filteredPrograms.map((program) => (
-            <ProgramCard key={program.id} program={program} />
+          {filteredPrograms.map((program, i) => (
+            <MotionCard key={program.id} index={i} className="h-full">
+              <ProgramCard program={program} />
+            </MotionCard>
           ))}
         </div>
 
         {filteredPrograms.length === 0 && (
           <div className="mx-auto mt-14 max-w-[991px] rounded-[25px] border-2 border-white/30 bg-white/[0.06] px-6 py-12 text-center font-[family-name:var(--font-inter)] text-white/70">
-            Program belum ditemukan. Coba kata kunci atau kategori lain.
+            Program not found. Try another keyword or category.
           </div>
         )}
 
         <button
           type="button"
-          className="mx-auto mt-[58px] flex h-[59px] w-full max-w-[400px] items-center justify-center gap-3 rounded-[10px] border border-white bg-[#032a79] font-[family-name:var(--font-inter)] text-lg font-bold text-white transition hover:bg-[#0560c3]"
+          className="group mx-auto mt-[58px] flex h-[59px] w-full max-w-[400px] items-center justify-center gap-3 rounded-[10px] border border-white bg-[#032a79] font-[family-name:var(--font-inter)] text-lg font-bold text-white transition duration-300 hover:bg-[#0560c3] hover:border-[#ffbd4a] hover:scale-[1.02] active:scale-[0.98]"
         >
           View Other Programs
           <span
             aria-hidden="true"
-            className="grid h-6 w-6 place-items-center rounded-full border border-white/80 text-xs"
+            className="grid h-7 w-7 place-items-center rounded-full border border-white/80 text-xs transition-colors group-hover:border-[#ffbd4a] group-hover:text-[#ffbd4a]"
           >
-            v
+            <ChevronDown className="h-4 w-4" />
           </span>
         </button>
-      </div>
+      </MotionSection>
     </section>
   )
 }

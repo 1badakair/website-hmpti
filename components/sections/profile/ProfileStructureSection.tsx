@@ -6,6 +6,8 @@ import { profileDepartments } from "@/data/profile"
 import type { ProfileDepartment } from "@/types"
 import { ProfileDepartmentTabs } from "./ProfileDepartmentTabs"
 import { ProfileMemberCard } from "./ProfileMemberCard"
+import { MotionSection } from "@/components/ui/MotionSection"
+import { motion } from "motion/react"
 
 export function ProfileStructureSection() {
   const [activeId, setActiveId] = useState<ProfileDepartment["id"]>("bph")
@@ -32,7 +34,7 @@ export function ProfileStructureSection() {
         className="pointer-events-none absolute left-[52%] top-24 hidden rotate-12 opacity-70 md:block"
       />
 
-      <div className="relative mx-auto max-w-[1177px]">
+      <MotionSection className="relative mx-auto max-w-[1177px]">
         <h2 className="text-center font-[family-name:var(--font-goldman)] text-4xl leading-none text-white sm:text-6xl">
           HMPTI <span className="text-[#ffbd4a]">Structure</span>
         </h2>
@@ -55,15 +57,21 @@ export function ProfileStructureSection() {
                 </p>
               </div>
 
-              <div className="mt-10 grid grid-cols-2 justify-items-center gap-4 sm:gap-8 xl:grid-cols-3 xl:justify-items-start">
+              <motion.div
+                key={activeId}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3 }}
+                className="mt-10 grid grid-cols-2 justify-items-center gap-4 sm:gap-8 xl:grid-cols-3 xl:justify-items-start"
+              >
                 {activeDepartment.members.map((member) => (
                   <ProfileMemberCard key={member.id} member={member} />
                 ))}
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
-      </div>
+      </MotionSection>
     </section>
   )
 }

@@ -1,3 +1,5 @@
+import { Search } from "lucide-react"
+
 type AcademicCategoryFilterProps = {
   activeScope: string
   onQueryChange: (query: string) => void
@@ -5,7 +7,7 @@ type AcademicCategoryFilterProps = {
   query: string
 }
 
-const scopes = ["Internal", "Nasional", "Internasional"]
+const scopes = ["Internal", "National", "International"]
 
 export function AcademicCategoryFilter({
   activeScope,
@@ -23,20 +25,7 @@ export function AcademicCategoryFilter({
           Search academic info
         </label>
         <div className="flex min-h-[52px] flex-1 items-center gap-3 rounded-[10px] border border-[#d5d5d5] bg-white/70 px-5">
-          <svg
-            aria-hidden="true"
-            className="h-5 w-5 shrink-0 text-[#001b4b]/70"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="m21 21-4.3-4.3m1.3-5.2a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0Z"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-            />
-          </svg>
+          <Search className="h-5 w-5 shrink-0 text-[#001b4b]/70" />
           <input
             id="academic-category-search"
             value={query}
@@ -47,7 +36,7 @@ export function AcademicCategoryFilter({
         </div>
         <button
           type="submit"
-          className="min-h-[53px] rounded-[13px] border-2 border-white/20 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-base font-semibold text-white transition hover:bg-[#0a70da] sm:w-[107px] sm:px-0"
+          className="min-h-[53px] rounded-[13px] border-2 border-white/20 bg-[#0560c3] px-8 font-[family-name:var(--font-inter)] text-base font-semibold text-white transition duration-300 hover:bg-[#0a70da] hover:scale-[1.02] active:scale-[0.98] sm:w-[107px] sm:px-0"
         >
           Search
         </button>
@@ -59,10 +48,10 @@ export function AcademicCategoryFilter({
             key={scope}
             type="button"
             onClick={() => onScopeChange(scope)}
-            className={`h-11 rounded-[9px] border font-[family-name:var(--font-inter)] text-sm font-semibold transition sm:h-[50px] ${
+            className={`h-11 rounded-[9px] border font-[family-name:var(--font-inter)] text-sm font-semibold transition duration-300 sm:h-[50px] ${
               activeScope === scope
-                ? "border-[#f9a825] bg-[#f9a825] text-white"
-                : "border-white/35 bg-[#001b4b] text-white hover:border-[#ffbd4a]"
+                ? "border-[#f9a825] bg-[#f9a825] text-white scale-100 shadow-[0_10px_24px_rgba(249,168,37,0.24)]"
+                : "border-white/35 bg-[#001b4b] text-white hover:border-[#ffbd4a] hover:scale-[1.02] active:scale-[0.98]"
             }`}
           >
             {scope}

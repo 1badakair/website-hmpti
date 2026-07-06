@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import type { ChangeEvent, FormEvent } from "react"
+import { Send } from "lucide-react"
 
 type AsdosForm = {
   name: string
@@ -110,22 +111,9 @@ export function AsdosFormSection() {
 
             <button
               type="submit"
-              className="flex h-[52px] w-full items-center justify-center gap-3 rounded-[13px] bg-[linear-gradient(90deg,#ffbd4a_0%,#ff8617_100%)] font-[family-name:var(--font-inter)] text-base font-bold text-white shadow-[0_18px_38px_rgba(249,168,37,0.24)] transition hover:brightness-110"
+              className="flex h-[52px] w-full items-center justify-center gap-3 rounded-[13px] bg-[linear-gradient(90deg,#ffbd4a_0%,#ff8617_100%)] font-[family-name:var(--font-inter)] text-base font-bold text-white shadow-[0_18px_38px_rgba(249,168,37,0.24)] transition duration-300 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
             >
-              <svg
-                aria-hidden="true"
-                className="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M21 3 9.5 14.5M21 3l-7 18-4.5-6.5L3 10l18-7Z"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                />
-              </svg>
+              <Send className="h-5 w-5" />
               Submit Aspiration
             </button>
           </form>

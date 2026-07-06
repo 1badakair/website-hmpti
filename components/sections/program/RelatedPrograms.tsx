@@ -17,10 +17,10 @@ export function RelatedPrograms({ programs }: RelatedProgramsProps) {
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="font-[family-name:var(--font-inter)] text-sm font-semibold uppercase tracking-[0.22em] text-[#ffbd4a]">
-              Program Lainnya
+              Other Programs
             </p>
             <h2 className="mt-4 font-[family-name:var(--font-goldman)] text-4xl text-white sm:text-5xl">
-              Program Lainnya
+              Other Programs
             </h2>
           </div>
           <Link

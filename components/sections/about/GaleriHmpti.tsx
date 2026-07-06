@@ -16,7 +16,7 @@ export function GaleriHmpti() {
           className="pointer-events-none absolute -left-16 top-1/2 block w-14 -translate-y-1/2 opacity-80 sm:w-24"
         />
         <h2 className="px-5 text-center font-[family-name:var(--font-goldman)] text-5xl leading-none [paint-order:stroke] [-webkit-text-stroke:0.13em_#032a79] sm:text-[64px]">
-          Galeri <span className="text-[#ffbd4a]">HMPTI</span>
+          HMPTI <span className="text-[#ffbd4a]">Gallery</span>
         </h2>
         <Image
           src="/figma/star-rough.png"
@@ -49,7 +49,7 @@ export function GaleriHmpti() {
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={photo.src}
-                    alt={`Galeri HMPTI ${photo.id}`}
+                    alt={`HMPTI Gallery ${photo.id}`}
                     loading="eager"
                     decoding="async"
                     className="h-full w-full object-cover transition duration-300 hover:scale-105"

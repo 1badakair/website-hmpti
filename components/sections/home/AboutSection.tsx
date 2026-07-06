@@ -1,5 +1,7 @@
 import Image from "next/image"
 
+import { MotionSection } from "@/components/ui/MotionSection"
+
 export function AboutSection() {
   return (
     <section id="explore" className="relative px-5 pt-24 sm:px-8 lg:px-16">
@@ -10,7 +12,7 @@ export function AboutSection() {
         height={824}
         className="pointer-events-none absolute left-[-520px] top-[-80px] opacity-70"
       />
-      <div className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-[1fr_360px] lg:items-center">
+      <MotionSection className="mx-auto grid max-w-[1120px] gap-10 lg:grid-cols-[1fr_360px] lg:items-center">
         <div>
           <h2 className="font-[family-name:var(--font-goldman)] text-5xl leading-none sm:text-7xl">
             Explore <span className="text-[#ffbd4a]">HMPTI</span>
@@ -20,7 +22,7 @@ export function AboutSection() {
             innovations, and academic programs designed to empower your IT journey.
           </p>
           <a
-            className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition hover:brightness-110 sm:h-9 sm:text-sm"
+            className="inline-flex h-8 items-center justify-center rounded-md bg-gradient-to-r from-[#ffbd4a] to-[#ff8d24] px-5 font-[family-name:var(--font-inter)] text-xs font-bold text-white shadow-[0_4px_12px_rgba(0,0,0,0.18)] transition duration-300 hover:scale-[1.02] hover:brightness-110 active:scale-[0.98] sm:h-9 sm:text-sm"
             href="#explore"
           >
             About HMPTI
@@ -41,7 +43,7 @@ export function AboutSection() {
             <span className="block text-white/70">HMPTI Chairman</span>
           </div>
         </div>
-      </div>
+      </MotionSection>
     </section>
   )
 }
