@@ -29,7 +29,7 @@ export function AboutSection() {
         <div className="relative mx-auto w-full max-w-[310px]">
           <div className="overflow-hidden rounded-[28px] border border-[#ffbd4a] bg-[#001a48] p-2 shadow-[0_20px_55px_rgba(0,0,0,0.35)]">
             <Image
-              src="/figma/xavier.png"
+              src="/assets/profile/xavier.png"
               alt="Xavier Wijaya"
               width={264}
               height={402}
