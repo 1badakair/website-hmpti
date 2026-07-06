@@ -47,7 +47,7 @@ export function Maskot() {
             <span className="text-[#ffbd4a]">Owiie</span>
           </p>
 
-          <div className="mt-7 grid grid-cols-3 gap-3">
+          <div className="mt-7 grid grid-cols-3 gap-2 sm:gap-3">
             {maskotTabs.map((tab) => {
               const isActive = active === tab.id
               return (
@@ -56,7 +56,7 @@ export function Maskot() {
                   type="button"
                   onClick={() => setActive(tab.id)}
                   aria-pressed={isActive}
-                  className={`rounded-[15px] border border-white px-3 py-2.5 font-[family-name:var(--font-inter)] text-base font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition sm:px-8 sm:text-xl ${
+                  className={`min-w-0 rounded-[15px] border border-white px-2 py-2 text-sm font-medium text-white [paint-order:stroke] [-webkit-text-stroke:0.05em_#ffffff] transition sm:px-8 sm:py-2.5 sm:text-xl font-[family-name:var(--font-inter)] ${
                     isActive ? "bg-[#a0aec0]" : "bg-[#002a75] hover:bg-[#003491]"
                   }`}
                 >
