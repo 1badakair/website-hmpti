@@ -50,7 +50,7 @@ export default async function AcademicCategoryRoute({
   return (
     <div className="min-h-screen overflow-x-clip bg-[#001b4b] text-white">
       <Navbar />
-      <main>
+      <main id="main-content">
         <AcademicCategoryHero
           buttonText={category.buttonText}
           subtitle={category.subtitle}

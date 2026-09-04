@@ -8,7 +8,6 @@ import { ProgramCard } from "./ProgramCard"
 import { ProgramFilter } from "./ProgramFilter"
 import { MotionSection } from "@/components/ui/MotionSection"
 import { MotionCard } from "@/components/ui/MotionCard"
-import { ChevronDown } from "lucide-react"
 
 export function ProgramListSection() {
   const [query, setQuery] = useState("")
@@ -75,6 +74,7 @@ export function ProgramListSection() {
             activeCategory={activeCategory}
             categories={programCategories}
             query={query}
+            resultCount={filteredPrograms.length}
             onCategoryChange={setActiveCategory}
             onQueryChange={setQuery}
           />
@@ -93,19 +93,6 @@ export function ProgramListSection() {
             Program not found. Try another keyword or category.
           </div>
         )}
-
-        <button
-          type="button"
-          className="group mx-auto mt-[58px] flex h-[59px] w-full max-w-[400px] items-center justify-center gap-3 rounded-[10px] border border-white bg-[#032a79] font-[family-name:var(--font-inter)] text-lg font-bold text-white transition duration-300 hover:bg-[#0560c3] hover:border-[#ffbd4a] hover:scale-[1.02] active:scale-[0.98]"
-        >
-          View Other Programs
-          <span
-            aria-hidden="true"
-            className="grid h-7 w-7 place-items-center rounded-full border border-white/80 text-xs transition-colors group-hover:border-[#ffbd4a] group-hover:text-[#ffbd4a]"
-          >
-            <ChevronDown className="h-4 w-4" />
-          </span>
-        </button>
       </MotionSection>
     </section>
   )

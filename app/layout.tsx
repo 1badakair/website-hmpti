@@ -35,7 +35,10 @@ export default function RootLayout({
       lang="en"
       className={`${workSans.variable} ${goldman.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        <a className="skip-link" href="#main-content">
+          Skip to main content
+        </a>
         <BetaNotice />
         {children}
       </body>

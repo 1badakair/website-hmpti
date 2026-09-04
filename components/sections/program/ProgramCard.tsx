@@ -9,7 +9,7 @@ type ProgramCardProps = {
 
 export function ProgramCard({ program }: ProgramCardProps) {
   return (
-    <article className="group overflow-hidden rounded-[25px] border-2 border-white/80 bg-[#002a75] shadow-[0_18px_42px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-[#ffbd4a]">
+    <article className="group relative overflow-hidden rounded-[25px] border-2 border-white/80 bg-[#002a75] shadow-[0_18px_42px_rgba(0,0,0,0.24)] transition duration-300 hover:-translate-y-1 hover:border-[#ffbd4a] focus-within:-translate-y-1 focus-within:border-[#ffbd4a]">
       <div className="relative aspect-[475/293] overflow-hidden rounded-t-[23px] bg-[#064082]">
         <Image
           src={program.image}
@@ -53,10 +53,10 @@ export function ProgramCard({ program }: ProgramCardProps) {
         </p>
         <Link
           href={`/program/${program.slug}`}
-          className="mt-6 flex h-[39px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0560c3] font-[family-name:var(--font-inter)] text-sm font-semibold text-white transition duration-300 hover:bg-[#0a70da] hover:scale-[1.02] active:scale-[0.98]"
+          className="mt-6 flex h-[39px] w-full items-center justify-center gap-2 rounded-[10px] bg-[#0560c3] font-[family-name:var(--font-inter)] text-sm font-semibold text-white transition-colors duration-300 after:absolute after:inset-0 after:rounded-[25px] after:content-[''] group-hover:bg-[#0a70da]"
         >
           Read More
-          <ChevronRight className="h-4 w-4" />
+          <ChevronRight aria-hidden="true" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
         </Link>
       </div>
     </article>
