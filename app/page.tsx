@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="min-h-screen overflow-x-clip bg-[#032d5c] text-white">
       <Navbar />
-      <main>
+      <main id="main-content">
         <HeroSection />
         <AboutSection />
         <ProgramSection />

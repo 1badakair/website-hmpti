@@ -16,7 +16,7 @@ export default function AssistantLecturerPage() {
   return (
     <div className="min-h-screen overflow-x-clip bg-[#001b4b] text-white">
       <Navbar />
-      <main>
+      <main id="main-content">
         <AsdosHero />
         <AsdosFormSection />
         <AsdosRegistrationSection />

@@ -55,6 +55,7 @@ export function AcademicInfoSection() {
         <div className="mt-10 sm:mt-14 lg:mt-[76px]">
           <AcademicFilter
             query={query}
+            resultCount={filteredPosts.length}
             onQueryChange={setQuery}
           />
         </div>

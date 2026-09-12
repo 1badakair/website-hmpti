@@ -34,6 +34,7 @@ export function AcademicCategoryPage({ category }: AcademicCategoryPageProps) {
           onQueryChange={setQuery}
           onScopeChange={setActiveScope}
           query={query}
+          resultCount={filteredItems.length}
         />
 
         <div className="mx-auto mt-12 grid max-w-[990px] gap-x-10 gap-y-8 sm:mt-16 sm:gap-y-12 lg:grid-cols-2 lg:mt-[95px]">
@@ -44,7 +45,7 @@ export function AcademicCategoryPage({ category }: AcademicCategoryPageProps) {
 
         {filteredItems.length === 0 && (
           <div className="mx-auto mt-12 max-w-[990px] rounded-[16px] border-2 border-white/20 bg-white/[0.06] px-6 py-10 text-center font-[family-name:var(--font-inter)] text-white/70 sm:mt-[95px] sm:py-12">
-            Info belum ditemukan. Coba kata kunci atau filter lain.
+            No info found. Try another keyword or scope.
           </div>
         )}
       </div>

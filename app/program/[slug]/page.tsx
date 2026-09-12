@@ -56,7 +56,7 @@ export default async function ProgramDetailPage({
   return (
     <div className="min-h-screen overflow-x-clip bg-[#001b4b] text-white">
       <Navbar />
-      <main>
+      <main id="main-content">
         <ProgramDetailHero program={program} />
         <ProgramDetailContent program={program} />
         <RelatedPrograms programs={relatedPrograms} />

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { academicStats } from "@/data/academic"
 import Image from "next/image"
 import { Activity, Clock, Send } from "lucide-react"
@@ -65,13 +66,13 @@ export function AcademicStatsSection() {
           <p className="mt-2 max-w-[230px] font-[family-name:var(--font-inter)] text-sm leading-6 text-white/65 sm:mt-3">
             To share other educational info.
           </p>
-          <button
-            type="button"
-            className="mt-4 inline-flex h-[42px] w-fit items-center justify-center gap-2 rounded-[10px] bg-[#f9a825] px-6 font-[family-name:var(--font-inter)] text-sm font-bold text-white transition hover:bg-[#ffbd4a] sm:mt-6 sm:h-[44px] sm:px-7"
+          <Link
+            href="/aspiration"
+            className="mt-4 inline-flex h-[42px] w-fit items-center justify-center gap-2 rounded-[10px] bg-[#f9a825] px-6 font-[family-name:var(--font-inter)] text-sm font-bold text-white transition duration-300 hover:bg-[#ffbd4a] sm:mt-6 sm:h-[44px] sm:px-7"
           >
-            <Send className="h-4 w-4" />
+            <Send aria-hidden="true" className="h-4 w-4" />
             Submit News
-          </button>
+          </Link>
         </div>
       </MotionSection>
     </section>

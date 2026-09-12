@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import type { ChangeEvent, FormEvent } from "react"
 import { Send } from "lucide-react"
 
@@ -23,6 +23,8 @@ const initialForm: AspirationForm = {
 export function AspirationFormSection() {
   const [form, setForm] = useState<AspirationForm>(initialForm)
   const [successMessage, setSuccessMessage] = useState("")
+  const [submitting, setSubmitting] = useState(false)
+  const statusRef = useRef<HTMLDivElement>(null)
 
   const updateField =
     (field: keyof AspirationForm) =>
@@ -38,10 +40,16 @@ export function AspirationFormSection() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (submitting) return
+    setSubmitting(true)
     setSuccessMessage(
       "Thank you. Your aspiration has been temporarily recorded and has not been sent to the database.",
     )
     setForm(initialForm)
+    setSubmitting(false)
+    // Confirmation appears below the fold on small screens; focusing it
+    // makes the outcome of the submit impossible to miss.
+    requestAnimationFrame(() => statusRef.current?.focus())
   }
 
   return (
@@ -125,6 +133,8 @@ export function AspirationFormSection() {
 
             {successMessage && (
               <div
+                ref={statusRef}
+                tabIndex={-1}
                 className="rounded-[10px] border border-[#ffbd4a]/40 bg-[#ffbd4a]/15 px-4 py-3 font-[family-name:var(--font-inter)] text-sm font-semibold text-[#ffbd4a]"
                 role="status"
               >
@@ -134,10 +144,11 @@ export function AspirationFormSection() {
 
             <button
               type="submit"
-              className="flex h-[52px] w-full items-center justify-center gap-3 rounded-[13px] bg-[linear-gradient(90deg,#ffbd4a_0%,#ff8617_100%)] font-[family-name:var(--font-inter)] text-base font-bold text-white shadow-[0_18px_38px_rgba(249,168,37,0.24)] transition duration-300 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98]"
+              disabled={submitting}
+              className="flex h-[52px] w-full items-center justify-center gap-3 rounded-[13px] bg-[linear-gradient(90deg,#ffbd4a_0%,#ff8617_100%)] font-[family-name:var(--font-inter)] text-base font-bold text-white shadow-[0_18px_38px_rgba(249,168,37,0.24)] transition duration-300 hover:brightness-110 hover:scale-[1.02] active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100 disabled:hover:brightness-100"
             >
-              <Send className="h-5 w-5" />
-              Submit Aspiration
+              <Send aria-hidden="true" className="h-5 w-5" />
+              {submitting ? "Sending..." : "Submit Aspiration"}
             </button>
           </form>
         </div>

@@ -14,7 +14,7 @@ export function ProfileDepartmentTabs({
   onChange,
 }: ProfileDepartmentTabsProps) {
   return (
-    <div className="flex gap-3 overflow-x-auto rounded-[25px] border border-[#a0aec0] bg-[rgba(5,96,195,0.2)] p-5 lg:flex-col lg:gap-5 lg:p-16">
+    <div role="tablist" aria-label="Department" className="flex gap-3 overflow-x-auto rounded-[25px] border border-[#a0aec0] bg-[rgba(5,96,195,0.2)] p-5 lg:flex-col lg:gap-5 lg:p-16">
       {departments.map((department) => {
         const isActive = department.id === activeId
 
@@ -27,6 +27,8 @@ export function ProfileDepartmentTabs({
             }`}
             key={department.id}
             onClick={() => onChange(department.id)}
+            role="tab"
+            aria-selected={isActive}
             type="button"
           >
             {department.name}
