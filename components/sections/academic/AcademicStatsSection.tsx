@@ -34,7 +34,7 @@ export function AcademicStatsSection() {
 
         <article className="relative overflow-hidden rounded-[16px] border border-white/20 bg-[#001b4b] px-5 py-6 sm:px-6 sm:py-7">
           <Image
-            src="/figma/academic-deadline.png"
+            src="/assets/academic/deadline.png"
             alt=""
             fill
             sizes="(min-width: 1024px) 411px, 100vw"

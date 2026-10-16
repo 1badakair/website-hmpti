@@ -28,7 +28,7 @@ export function ProgramDetailHero({ program }: ProgramDetailHeroProps) {
         <div className="relative mt-12 overflow-hidden rounded-[34px] border border-white/12 bg-[#08356e] shadow-[0_24px_70px_rgba(0,0,0,0.28)]">
           <div className="relative aspect-[2.02] min-h-[260px]">
             <Image
-              src="/figma/program-detail-hero.png"
+              src="/assets/program/detail-hero.png"
               alt={program.title}
               fill
               priority

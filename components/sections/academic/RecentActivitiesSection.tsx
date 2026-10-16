@@ -19,7 +19,7 @@ export function RecentActivitiesSection() {
               >
                 <div className="relative min-h-[190px] sm:min-h-full">
                   <Image
-                    src={post.image ?? "/figma/academic-recent.png"}
+                    src={post.image ?? "/assets/academic/recent.png"}
                     alt={post.title}
                     fill
                     sizes="(min-width: 1024px) 270px, 100vw"

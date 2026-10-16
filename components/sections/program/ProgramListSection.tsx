@@ -29,28 +29,28 @@ export function ProgramListSection() {
   return (
     <section className="relative -mt-[53px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-24 pt-[90px] sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={167}
         height={167}
         className="absolute left-[9%] top-[58px] hidden h-40 w-40 -rotate-[57deg] opacity-80 md:block"
       />
       <Image
-        src="/figma/star-blob-white.svg"
+        src="/assets/decorations/star-blob-white.svg"
         alt=""
         width={112}
         height={112}
         className="absolute right-[18%] top-[88px] hidden h-28 w-28 rotate-[73deg] opacity-90 md:block"
       />
       <Image
-        src="/figma/star-solid.svg"
+        src="/assets/decorations/star-solid.svg"
         alt=""
         width={84}
         height={73}
         className="absolute right-[7%] top-[190px] hidden h-12 w-14 opacity-95 lg:block"
       />
       <Image
-        src="/figma/star-sparkle.svg"
+        src="/assets/decorations/star-sparkle.svg"
         alt=""
         width={70}
         height={67}

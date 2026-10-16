@@ -17,7 +17,7 @@ export function AcademicCategoryHero({
   return (
     <section className="relative -mt-[101px] min-h-[560px] overflow-hidden bg-[#002a75] px-5 pt-[218px] sm:min-h-[650px] sm:px-8 sm:pt-[250px] lg:min-h-[735px] lg:px-16 lg:pt-[286px]">
       <Image
-        src="/figma/star-sparkle.svg"
+        src="/assets/decorations/star-sparkle.svg"
         alt=""
         width={67}
         height={58}
@@ -26,14 +26,14 @@ export function AcademicCategoryHero({
       <div className="mx-auto max-w-[916px] text-center">
         <div className="relative mx-auto inline-block px-8 py-3 sm:px-14">
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}
             className="absolute -left-10 top-0 z-0 hidden h-[128px] w-[128px] object-contain opacity-70 md:block"
           />
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}

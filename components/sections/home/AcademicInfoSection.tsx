@@ -45,7 +45,7 @@ export function AcademicInfoSection() {
   return (
     <section className="relative px-5 py-24 sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-22.svg"
+        src="/assets/decorations/star-22.svg"
         alt=""
         width={647}
         height={647}

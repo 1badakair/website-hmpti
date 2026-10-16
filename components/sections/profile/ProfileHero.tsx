@@ -5,7 +5,7 @@ export function ProfileHero() {
   return (
     <section className="relative min-h-[720px] overflow-hidden px-5 pb-20 pt-24 sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-solid.svg"
+        src="/assets/decorations/star-solid.svg"
         alt=""
         width={72}
         height={72}
@@ -13,7 +13,7 @@ export function ProfileHero() {
         priority
       />
       <Image
-        src="/figma/star-outline.svg"
+        src="/assets/decorations/star-outline.svg"
         alt=""
         width={38}
         height={38}

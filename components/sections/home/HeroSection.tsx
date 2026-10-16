@@ -23,7 +23,7 @@ export function HeroSection() {
   return (
     <section className="relative isolate min-h-[729px] px-5 pb-16 pt-20 sm:px-8 lg:px-16 lg:pt-24">
       <Image
-        src="/figma/blue-pattern.png"
+        src="/assets/decorations/blue-pattern.png"
         alt=""
         width={736}
         height={1386}

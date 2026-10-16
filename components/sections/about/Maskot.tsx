@@ -12,7 +12,7 @@ export function Maskot() {
   return (
     <section id="mascot" className="relative scroll-mt-32 px-5 py-20 sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={255}
         height={255}
@@ -20,7 +20,7 @@ export function Maskot() {
         className="pointer-events-none absolute left-[2%] top-[10%] -z-10 block w-24 opacity-80 lg:w-44"
       />
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={255}
         height={255}
@@ -32,7 +32,7 @@ export function Maskot() {
         <div>
           <div className="relative w-fit">
             <Image
-              src="/figma/star-rough.png"
+              src="/assets/decorations/star-rough.png"
               alt=""
               width={255}
               height={255}
@@ -92,7 +92,7 @@ export function Maskot() {
         <div className="overflow-hidden rounded-[15px] bg-white shadow-[0_20px_55px_rgba(0,0,0,0.35)] transition-transform duration-500 hover:scale-[1.02]">
           <div className="relative aspect-[495/278] w-full">
             <Image
-              src="/figma/owiie.svg"
+              src="/assets/mascot/owiie.svg"
               alt="Owiie — maskot HMPTI"
               fill
               sizes="(min-width: 1024px) 520px, 92vw"

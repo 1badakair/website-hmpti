@@ -4,21 +4,21 @@ export function AcademicHero() {
   return (
     <section className="relative -mt-[101px] min-h-[640px] overflow-hidden bg-[#002a75] px-5 pt-[214px] sm:min-h-[720px] sm:px-8 sm:pt-[230px] lg:min-h-[790px] lg:px-16 lg:pt-[242px]">
       <Image
-        src="/figma/star-outline.svg"
+        src="/assets/decorations/star-outline.svg"
         alt=""
         width={107}
         height={107}
         className="absolute left-[5%] top-[176px] z-0 h-16 w-16 rotate-[16deg] opacity-95 sm:h-24 sm:w-24"
       />
       <Image
-        src="/figma/star-solid.svg"
+        src="/assets/decorations/star-solid.svg"
         alt=""
         width={74}
         height={74}
         className="absolute right-[5%] top-[180px] z-0 hidden h-14 w-14 rotate-12 opacity-95 md:block"
       />
       <Image
-        src="/figma/star-sparkle.svg"
+        src="/assets/decorations/star-sparkle.svg"
         alt=""
         width={67}
         height={58}
@@ -39,7 +39,7 @@ export function AcademicHero() {
 
       <div className="pointer-events-none absolute left-1/2 top-[440px] z-0 h-[260px] w-[min(500px,88vw)] -translate-x-1/2 overflow-hidden sm:top-[480px] sm:h-[320px] sm:w-[min(580px,88vw)] lg:top-[514px] lg:h-[372px] lg:w-[min(614px,90vw)]">
         <Image
-          src="/figma/academic-mascot.png"
+          src="/assets/mascot/academic.png"
           alt="Maskot Academic HMPTI"
           width={3072}
           height={4096}

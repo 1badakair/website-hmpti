@@ -22,7 +22,7 @@ npm run lint    # eslint (flat config, eslint.config.mjs)
 - `data/*.ts` — all page content as typed exported constants. Edit copy/items here, not in components.
 - `types/index.ts` — shared domain types (Program, AcademicPost, ProfileDepartment, GalleryItem, etc.).
 - `lib/utils.ts` — only `cn()` classname joiner.
-- `public/figma/` — exported design assets (svg/png) referenced by data files.
+- `public/assets/` — static assets: `brand/` (logos), `icons/` (+`social/`), `decorations/` (stars, ellipses, patterns), `mascot/`, `gallery/`, `academic/`, `program/`, `photos/`, `profile/` (member portraits), `video/`.
 
 ## Conventions
 

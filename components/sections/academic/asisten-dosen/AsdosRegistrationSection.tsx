@@ -6,14 +6,14 @@ export function AsdosRegistrationSection() {
       <div className="relative z-10 mx-auto max-w-[720px] text-center">
         <div className="relative mx-auto inline-block px-10 py-4">
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}
             className="absolute -left-8 top-2 z-0 hidden h-[110px] w-[110px] object-contain opacity-70 md:block"
           />
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}

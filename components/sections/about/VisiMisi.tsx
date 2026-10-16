@@ -19,7 +19,7 @@ export function VisiMisi() {
       </MotionSection>
 
       <Image
-        src="/figma/Star3.svg"
+        src="/assets/decorations/star-3.svg"
         alt=""
         width={475}
         height={486}
@@ -27,7 +27,7 @@ export function VisiMisi() {
         className="pointer-events-none absolute left-[-160px] top-[20%] z-0 block w-[230px] lg:w-[520px]"
       />
       <Image
-        src="/figma/Star3.svg"
+        src="/assets/decorations/star-3.svg"
         alt=""
         width={475}
         height={486}
@@ -60,7 +60,7 @@ export function VisiMisi() {
 
           <div className="relative w-full lg:w-[514px]">
             <Image
-              src="/figma/star-solid.svg"
+              src="/assets/decorations/star-solid.svg"
               alt=""
               width={109}
               height={109}
@@ -68,7 +68,7 @@ export function VisiMisi() {
               className="pointer-events-none absolute -left-10 -top-10 z-10 block w-14 sm:w-[88px]"
             />
             <Image
-              src="/figma/star-blob.svg"
+              src="/assets/decorations/star-blob.svg"
               alt=""
               width={74}
               height={74}

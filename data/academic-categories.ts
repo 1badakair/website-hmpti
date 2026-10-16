@@ -34,7 +34,7 @@ const baseItems = [
     description:
       "An internal learning program by HMIF aimed at the BPH and all HMIF staff. Materials cover HTML, CSS, Tailwind, JavaScript, React/Next, and others.",
     date: "12 August 2025",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     scope: "Internal",
     mode: "Offline",
   },
@@ -44,7 +44,7 @@ const baseItems = [
     description:
       "A summary of national competition opportunities for Informatics students looking to develop their academic portfolio and achievements.",
     date: "18 August 2025",
-    image: "/figma/academic-lomba.png",
+    image: "/assets/academic/lomba.png",
     scope: "National",
     mode: "Online",
   },
@@ -54,7 +54,7 @@ const baseItems = [
     description:
       "International academic information, research programs, global seminars, and cross-campus self-development opportunities.",
     date: "25 August 2025",
-    image: "/figma/academic-seminar.png",
+    image: "/assets/academic/seminar.png",
     scope: "International",
     mode: "Hybrid",
   },
@@ -64,7 +64,7 @@ const baseItems = [
     description:
       "A sharing session among students to discuss academic opportunities, class preparation, and strategies for campus activities.",
     date: "30 August 2025",
-    image: "/figma/gallery-3.jpg",
+    image: "/assets/gallery/3.jpg",
     scope: "Internal",
     mode: "Offline",
   },
