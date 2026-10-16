@@ -8,21 +8,21 @@ const linkHref: Record<string, string> = {
 }
 
 const institutionLogos = [
-  { src: "/figma/logo-uksw-v2.png", alt: "UKSW" },
-  { src: "/figma/logo-k2i-v2.png", alt: "K2I" },
-  { src: "/figma/logo-hmpti-v2.png", alt: "HMPTI" },
+  { src: "/assets/brand/logo-uksw-v2.png", alt: "UKSW" },
+  { src: "/assets/brand/logo-k2i-v2.png", alt: "K2I" },
+  { src: "/assets/brand/logo-hmpti-v2.png", alt: "HMPTI" },
 ]
 
 const socials = [
-  { label: "Instagram", src: "/figma/social/instagram.svg" },
-  { label: "LinkedIn", src: "/figma/social/linkedin.svg" },
-  { label: "Twitter", src: "/figma/social/twitter.svg" },
-  { label: "YouTube", src: "/figma/social/youtube.svg" },
+  { label: "Instagram", src: "/assets/icons/social/instagram.svg" },
+  { label: "LinkedIn", src: "/assets/icons/social/linkedin.svg" },
+  { label: "Twitter", src: "/assets/icons/social/twitter.svg" },
+  { label: "YouTube", src: "/assets/icons/social/youtube.svg" },
 ]
 
 const contacts = [
-  { icon: "/figma/social/email.svg", label: "Email", value: "hmp.s1.ti@adm.uksw.edu" },
-  { icon: "/figma/social/whatsapp.svg", label: "Instagram", value: "@hmptiuksw" },
+  { icon: "/assets/icons/social/email.svg", label: "Email", value: "hmp.s1.ti@adm.uksw.edu" },
+  { icon: "/assets/icons/social/whatsapp.svg", label: "Instagram", value: "@hmptiuksw" },
 ]
 
 export function Footer() {
@@ -43,7 +43,7 @@ export function Footer() {
             ))}
           </div>
           <Image
-            src="/figma/logo-hmpti-text.png"
+            src="/assets/brand/logo-hmpti-text.png"
             alt="HMPTI26"
             width={420}
             height={77}

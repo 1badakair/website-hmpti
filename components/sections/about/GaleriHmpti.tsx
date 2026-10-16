@@ -8,7 +8,7 @@ export function GaleriHmpti() {
     <section className="relative overflow-hidden bg-[linear-gradient(to_bottom,rgba(0,26,77,0)_0%,rgba(0,26,77,0.97)_37%,rgba(0,26,77,1)_100%)] py-20">
       <div className="relative mx-auto mb-12 flex w-fit items-center justify-center">
         <Image
-          src="/figma/star-rough.png"
+          src="/assets/decorations/star-rough.png"
           alt=""
           width={255}
           height={255}
@@ -19,7 +19,7 @@ export function GaleriHmpti() {
           HMPTI <span className="text-[#ffbd4a]">Gallery</span>
         </h2>
         <Image
-          src="/figma/star-rough.png"
+          src="/assets/decorations/star-rough.png"
           alt=""
           width={255}
           height={255}

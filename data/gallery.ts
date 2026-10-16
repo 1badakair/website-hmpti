@@ -2,7 +2,7 @@ export const galleryItems = [
   {
     id: "pengurus",
     title: "HMPTI UKSW Committee",
-    imageUrl: "/figma/hero-members.png",
+    imageUrl: "/assets/photos/hero-members.png",
   },
   {
     id: "ketua",

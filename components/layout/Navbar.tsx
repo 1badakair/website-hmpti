@@ -92,7 +92,7 @@ export function Navbar() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/figma/logo-hmpti-v2.png"
+            src="/assets/brand/logo-hmpti-v2.png"
             alt="HMPTI"
             width={40}
             height={40}
@@ -100,7 +100,7 @@ export function Navbar() {
             priority
           />
           <Image
-            src="/figma/logo-hmpti-text.png"
+            src="/assets/brand/logo-hmpti-text.png"
             alt="HMPTI26"
             width={420}
             height={77}
