@@ -28,14 +28,14 @@ export function AcademicInfoSection() {
   return (
     <section className="relative -mt-[39px] overflow-hidden rounded-t-[35px] bg-[#001b4b] px-5 pb-12 pt-20 sm:px-8 sm:pt-[100px] lg:px-16 lg:pt-[118px]">
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={140}
         height={140}
         className="absolute left-[11%] top-[98px] hidden h-[100px] w-[100px] object-contain opacity-60 md:block"
       />
       <Image
-        src="/figma/star-blob-white.svg"
+        src="/assets/decorations/star-blob-white.svg"
         alt=""
         width={118}
         height={118}

@@ -21,7 +21,7 @@ export function TentangKami() {
   return (
     <section className="relative px-5 pb-12 pt-24 sm:px-8 lg:px-16">
       <Image
-        src="/figma/ellipse-14.svg"
+        src="/assets/decorations/ellipse-14.svg"
         alt=""
         width={1079}
         height={824}
@@ -29,7 +29,7 @@ export function TentangKami() {
         className="pointer-events-none absolute left-1/2 top-0 -z-10 -translate-x-1/2 opacity-40"
       />
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={255}
         height={255}

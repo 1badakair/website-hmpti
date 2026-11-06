@@ -4,21 +4,21 @@ export function ProgramHero() {
   return (
     <section className="relative -mt-[101px] min-h-[790px] overflow-hidden bg-[linear-gradient(180deg,rgba(3,45,92,0.9)_0%,rgba(5,96,195,0.9)_42%,rgba(0,42,117,0.94)_100%)] px-5 pt-[210px] sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-outline.svg"
+        src="/assets/decorations/star-outline.svg"
         alt=""
         width={107}
         height={107}
         className="absolute left-[5%] top-[150px] z-0 h-16 w-16 rotate-[16deg] opacity-95 sm:h-24 sm:w-24"
       />
       <Image
-        src="/figma/star-solid.svg"
+        src="/assets/decorations/star-solid.svg"
         alt=""
         width={74}
         height={74}
         className="absolute right-[6%] top-[170px] z-0 hidden h-14 w-14 rotate-12 opacity-95 md:block"
       />
       <Image
-        src="/figma/star-sparkle.svg"
+        src="/assets/decorations/star-sparkle.svg"
         alt=""
         width={67}
         height={58}
@@ -34,7 +34,7 @@ export function ProgramHero() {
       </div>
       <div className="pointer-events-none relative z-0 mx-auto mt-10 h-[330px] w-full max-w-[820px] overflow-hidden sm:mt-12">
         <Image
-          src="/figma/program-mascot.png"
+          src="/assets/mascot/program.png"
           alt="Maskot HMPTI"
           width={1080}
           height={1920}

@@ -12,6 +12,14 @@ body {
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
 }
 
+/* Tailwind v4 no longer sets cursor: pointer on buttons by default */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
 /* Hide scrollbar while keeping scroll functionality */
 .no-scrollbar {
   -ms-overflow-style: none;

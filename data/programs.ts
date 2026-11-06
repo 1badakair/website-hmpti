@@ -3,19 +3,19 @@ import type { Program, ProgramCategory, ProgramSummary } from "@/types"
 export const programs: ProgramSummary[] = [
   {
     id: "visi-misi",
-    icon: "/figma/vector-target.svg",
+    icon: "/assets/icons/vector-target.svg",
     title: "Vision & Mission",
     description: "The main direction and goals of HMPTI UKSW.",
   },
   {
     id: "division",
-    icon: "/figma/vector-folder.svg",
+    icon: "/assets/icons/vector-folder.svg",
     title: "Division",
     description: "Workspace and role distribution within the organization.",
   },
   {
     id: "mascot",
-    icon: "/figma/vector.svg",
+    icon: "/assets/icons/vector.svg",
     title: "Mascot",
     description: "Visual identity and character of HMPTI.",
   },
@@ -36,7 +36,7 @@ export const programPageItems: Program[] = [
       "A collaborative learning space to help students understand course materials and prepare for academic evaluations.",
     content:
       "Bebek provides a relaxed learning session with mentors and peers from the same cohort. This program is created so students can ask questions, discuss, and strengthen their understanding of materials in a supportive atmosphere.",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     date: "12 August 2025",
     mode: "Offline",
     location: "FTI UKSW Campus",
@@ -61,7 +61,7 @@ export const programPageItems: Program[] = [
       "Member development class to learn components, state, and basic workflows in building web interfaces.",
     content:
       "The Basic React Internal Class serves as a place for HMPTI members to strengthen their technical skills through hands-on practice and mini-project discussions.",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     date: "20 August 2025",
     mode: "Offline",
     location: "FTI Computer Laboratory",
@@ -86,7 +86,7 @@ export const programPageItems: Program[] = [
       "Digital product design workshop to hone research, wireframing, and prototyping skills.",
     content:
       "The Creative UI/UX Workshop is designed to open a space for design exploration starting from real user problems.",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     date: "5 September 2025",
     mode: "Offline",
     location: "FTI UKSW Hall",
@@ -111,7 +111,7 @@ export const programPageItems: Program[] = [
       "Preparation program for prospective teaching assistants through communication, technical, and class mentoring ethics training.",
     content:
       "Teaching Assistant Mentoring helps students prepare themselves to support the learning process in classes and laboratories.",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     date: "18 September 2025",
     mode: "Offline",
     location: "HMPTI Discussion Room",
@@ -136,7 +136,7 @@ export const programPageItems: Program[] = [
       "Cross-community collaborative activities to develop ideas, creations, and technology networks.",
     content:
       "Community Technology Collaboration connects students with creative and technology communities to create impactful creations.",
-    image: "/figma/program-card.png",
+    image: "/assets/program/card.png",
     date: "30 September 2025",
     mode: "Offline",
     location: "Creative Space UKSW",

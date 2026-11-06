@@ -80,5 +80,5 @@ export const maskotTabs: MaskotTab[] = [
 
 export const galleryPhotos = Array.from({ length: 12 }, (_, i) => ({
   id: i + 1,
-  src: `/figma/gallery-${i + 1}.jpg`,
+  src: `/assets/gallery/${i + 1}.jpg`,
 }))

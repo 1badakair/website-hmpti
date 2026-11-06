@@ -7,7 +7,7 @@ export function FAQSection() {
   return (
     <section className="relative px-5 py-24 sm:px-8 lg:px-16">
       <Image
-        src="/figma/ellipse-14.svg"
+        src="/assets/decorations/ellipse-14.svg"
         alt=""
         width={1079}
         height={824}

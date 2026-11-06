@@ -16,7 +16,7 @@ export function AcademicCard({ active = false, onSelect, post }: AcademicCardPro
   const content = (
     <>
       <Image
-        src={post.image ?? "/figma/academic-lomba.png"}
+        src={post.image ?? "/assets/academic/lomba.png"}
         alt={post.title}
         fill
         sizes="(min-width: 1280px) 284px, (min-width: 768px) 50vw, 100vw"

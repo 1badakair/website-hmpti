@@ -7,14 +7,14 @@ export function AspirationSection() {
   return (
     <section className="relative bg-[#001b4b] px-5 pb-24 pt-14 sm:px-8 sm:pb-[130px] sm:pt-[72px] lg:px-16">
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={140}
         height={140}
         className="absolute left-[11%] top-[68px] hidden h-[100px] w-[100px] object-contain opacity-60 md:block"
       />
       <Image
-        src="/figma/star-blob-white.svg"
+        src="/assets/decorations/star-blob-white.svg"
         alt=""
         width={118}
         height={118}

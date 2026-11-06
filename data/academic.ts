@@ -1,6 +1,6 @@
 export const academicPosts = [
   {
-    image: "/figma/activity-1.png",
+    image: "/assets/academic/activity-1.png",
     category: "Competition",
     status: "Deadline Approaching",
     statusClass: "border-[#f9a825]/25 bg-[#f9a825]/15 text-[#f9a825]",
@@ -11,7 +11,7 @@ export const academicPosts = [
     readTime: "3 minutes",
   },
   {
-    image: "/figma/activity-2.png",
+    image: "/assets/academic/activity-2.png",
     category: "Seminar",
     status: "Soon",
     statusClass: "border-[#0560c3]/25 bg-[#0560c3]/15 text-[#0560c3]",
@@ -22,7 +22,7 @@ export const academicPosts = [
     readTime: "4 minutes",
   },
   {
-    image: "/figma/activity-3.png",
+    image: "/assets/academic/activity-3.png",
     category: "Achievement",
     status: "New",
     statusClass: "border-[#00a88f]/25 bg-[#00a88f]/15 text-[#00a88f]",
@@ -41,7 +41,7 @@ export const academicPagePosts = [
     category: "lomba",
     description:
       "A collection of information on technology, design, and innovation competitions for Informatics students.",
-    image: "/figma/academic-lomba.png",
+    image: "/assets/academic/lomba.png",
     badge: "Achievement",
     href: "/academic/lomba",
   },
@@ -51,7 +51,7 @@ export const academicPagePosts = [
     category: "seminar",
     description:
       "Agenda for seminars, public lectures, and industry discussions relevant for skill development.",
-    image: "/figma/academic-seminar.png",
+    image: "/assets/academic/seminar.png",
     badge: "Achievement",
     href: "/academic/seminar",
   },
@@ -61,7 +61,7 @@ export const academicPagePosts = [
     category: "beasiswa",
     description:
       "Study funding opportunities, educational assistance, and student achievement appreciation programs.",
-    image: "/figma/academic-beasiswa.png",
+    image: "/assets/academic/beasiswa.png",
     badge: "Achievement",
     href: "/academic/beasiswa",
   },
@@ -71,7 +71,7 @@ export const academicPagePosts = [
     category: "magang",
     description:
       "Curated opportunities for certified internships and career programs for future IT professionals.",
-    image: "/figma/academic-magang.png",
+    image: "/assets/academic/magang.png",
     badge: "Achievement",
     href: "/academic/magang-sertifikasi",
   },
@@ -97,7 +97,7 @@ export const recentAcademicActivities = [
     category: "lomba",
     description:
       "National level Capture The Flag competition to hone cyber security skills.",
-    image: "/figma/academic-recent.png",
+    image: "/assets/academic/recent.png",
     date: "Registration Open",
     organizer: "UKM Polytechnic Computer Club Polines",
     tags: ["National", "Cyber Security"],
@@ -113,7 +113,7 @@ export const recentAcademicActivities = [
     category: "lomba",
     description:
       "National level Capture The Flag competition to hone cyber security skills.",
-    image: "/figma/academic-recent.png",
+    image: "/assets/academic/recent.png",
     date: "Registration Open",
     organizer: "UKM Polytechnic Computer Club Polines",
     tags: ["National", "Cyber Security"],

@@ -6,7 +6,7 @@ export function AboutSection() {
   return (
     <section id="explore" className="relative px-5 pt-24 sm:px-8 lg:px-16">
       <Image
-        src="/figma/ellipse-13.svg"
+        src="/assets/decorations/ellipse-13.svg"
         alt=""
         width={878}
         height={824}

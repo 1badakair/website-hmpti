@@ -8,27 +8,27 @@ const galleryItems = [
   {
     id: "main",
     title: "HMPTI academic activities",
-    image: "/figma/gallery-1.jpg",
+    image: "/assets/gallery/1.jpg",
   },
   {
     id: "thumb-1",
     title: "Academic discussion",
-    image: "/figma/gallery-2.jpg",
+    image: "/assets/gallery/2.jpg",
   },
   {
     id: "thumb-2",
     title: "Classroom",
-    image: "/figma/gallery-3.jpg",
+    image: "/assets/gallery/3.jpg",
   },
   {
     id: "thumb-3",
     title: "Student collaboration",
-    image: "/figma/gallery-4.jpg",
+    image: "/assets/gallery/4.jpg",
   },
   {
     id: "thumb-4",
     title: "Learning together",
-    image: "/figma/gallery-5.jpg",
+    image: "/assets/gallery/5.jpg",
   },
 ]
 
@@ -53,14 +53,14 @@ export function AsdosGallerySection() {
       <div className="mx-auto max-w-[900px]">
         <div className="relative mx-auto w-fit px-8 py-3 text-center">
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}
             className="absolute -left-7 top-3 z-0 hidden h-[72px] w-[72px] object-contain opacity-70 md:block"
           />
           <Image
-            src="/figma/star-rough.png"
+            src="/assets/decorations/star-rough.png"
             alt=""
             width={140}
             height={140}

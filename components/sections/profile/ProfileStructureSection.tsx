@@ -20,14 +20,14 @@ export function ProfileStructureSection() {
   return (
     <section id="struktur-hmpti" className="relative scroll-mt-32 px-5 pb-28 pt-20 sm:px-8 lg:px-16">
       <Image
-        src="/figma/star-22.svg"
+        src="/assets/decorations/star-22.svg"
         alt=""
         width={647}
         height={647}
         className="pointer-events-none absolute right-[-260px] top-56 opacity-60"
       />
       <Image
-        src="/figma/star-blob-white.svg"
+        src="/assets/decorations/star-blob-white.svg"
         alt=""
         width={120}
         height={120}

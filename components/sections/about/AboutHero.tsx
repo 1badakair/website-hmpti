@@ -39,7 +39,7 @@ export function AboutHero() {
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_bottom,rgba(3,45,92,0.85)_0%,rgba(3,45,92,0.78)_40%,rgba(3,45,92,0.96)_82%,#032d5c_100%)]" />
 
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={255}
         height={255}
@@ -47,7 +47,7 @@ export function AboutHero() {
         className="pointer-events-none absolute left-[4%] top-[26%] -z-10 block w-24 opacity-90 lg:w-40"
       />
       <Image
-        src="/figma/star-rough.png"
+        src="/assets/decorations/star-rough.png"
         alt=""
         width={255}
         height={255}
@@ -55,7 +55,7 @@ export function AboutHero() {
         className="pointer-events-none absolute right-[3%] top-[34%] -z-10 block w-16 opacity-90 lg:w-28"
       />
       <Image
-        src="/figma/star-sparkle.svg"
+        src="/assets/decorations/star-sparkle.svg"
         alt=""
         width={75}
         height={72}
@@ -63,7 +63,7 @@ export function AboutHero() {
         className="pointer-events-none absolute left-[6%] top-[18%] block w-10 sm:w-16"
       />
       <Image
-        src="/figma/star-outline.svg"
+        src="/assets/decorations/star-outline.svg"
         alt=""
         width={86}
         height={86}
@@ -71,7 +71,7 @@ export function AboutHero() {
         className="pointer-events-none absolute right-[6%] top-[16%] block w-12 sm:w-20"
       />
       <Image
-        src="/figma/star-solid.svg"
+        src="/assets/decorations/star-solid.svg"
         alt=""
         width={88}
         height={91}
@@ -79,7 +79,7 @@ export function AboutHero() {
         className="pointer-events-none absolute right-[16%] top-[24%] block w-8 lg:w-12"
       />
       <Image
-        src="/figma/star-blob-white.svg"
+        src="/assets/decorations/star-blob-white.svg"
         alt=""
         width={41}
         height={41}

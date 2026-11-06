@@ -20,7 +20,7 @@ export function ProgramCard({ program }: ProgramCardProps) {
         />
         <div className="absolute left-[15px] top-[9px] h-[46px] w-[159px] rounded-[22px] px-[10px] py-[10px]">
           <Image
-            src="/figma/program-logo-strip.png"
+            src="/assets/program/logo-strip.png"
             alt="HMPTI26"
             width={159}
             height={46}
